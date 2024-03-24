@@ -1,7 +1,8 @@
 ﻿using System.Configuration;
 using System.Data;
 using System.Windows;
-
+using Google.Apis.Services;
+using Google.Apis.YouTube.v3;
 namespace YouTubeBrowser
 {
     /// <summary>

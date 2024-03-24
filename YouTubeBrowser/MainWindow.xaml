@@ -7,8 +7,8 @@
         xmlns:cef="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <!--<Grid>
-        <cef:ChromiumWebBrowser x:Name="Browser_Test" Address="https://www.youtube.com/embed/kOG0_qjKWEI"></cef:ChromiumWebBrowser>
+    
+       <!--<cef:ChromiumWebBrowser x:Name="Browser_Test" Address="https://www.youtube.com/embed/kOG0_qjKWEI"></cef:ChromiumWebBrowser>
     </Grid>-->
     <Grid Name="pnlMainGrid" MouseUp="pnlMainGrid_MouseUp" Background="LightBlue">
         <Grid.RowDefinitions>
@@ -31,7 +31,7 @@
         <TextBox Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
             Write Link Here
         </TextBox>
-
+		 <ListBox x:Name="linkListBox"/>
     </Grid>
 
 </Window>

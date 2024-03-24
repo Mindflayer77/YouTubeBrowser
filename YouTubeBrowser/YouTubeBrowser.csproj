@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <PackageReference Include="CefSharp.Wpf.NETCore" Version="122.1.120" />
+    <PackageReference Include="Google.Apis.YouTube.v3" Version="1.67.0.3358" />
   </ItemGroup>
 
 </Project>
