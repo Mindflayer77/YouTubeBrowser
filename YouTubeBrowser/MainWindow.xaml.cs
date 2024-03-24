@@ -29,5 +29,15 @@ namespace YouTubeBrowser
         {
 
         }
+        
+        private void LoadLinks()
+        {
+           
+            var api = new API();
+
+            List<string> links = api.GetVideoLinks;
+
+            linkListBox.ItemsSource = links;
+        }
     }
 }
