@@ -27,7 +27,7 @@ namespace YouTubeBrowser
 
         private void File_Click_1(object sender, RoutedEventArgs e)
         {
-
+            
         }
         
         private void LoadLinks()

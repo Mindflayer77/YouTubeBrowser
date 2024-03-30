@@ -28,7 +28,7 @@
             </MenuItem>
             <MenuItem Header="Edit"></MenuItem>
         </Menu>
-        <TextBox Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+        <TextBox Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged">
             Write Link Here
         </TextBox>
 		 <ListBox x:Name="linkListBox"/>
