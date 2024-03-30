@@ -28,9 +28,18 @@
             <MenuItem Header="Edit"></MenuItem>
         </Menu>
         <TextBox x:Name="textBox" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
-            Write Link Here
+         
         </TextBox>
-        <cef:ChromiumWebBrowser Grid.Row="2" x:Name="Browser_Test" Address="https://www.youtube.com/embed/kOG0_qjKWEI">
+		
+		<!--<TextBox x:Name="textBoxSearch" Grid.Row="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+           
+		</TextBox>-->
+
+		<Button x:Name="Search_Button" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5" Click="Click_Search">
+			Search
+		</Button>
+		
+        <cef:ChromiumWebBrowser Grid.Row="2" x:Name="Browser_Test" Address="">
         </cef:ChromiumWebBrowser>
 
     </Grid>

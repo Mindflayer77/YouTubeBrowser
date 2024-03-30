@@ -17,7 +17,35 @@ namespace Api
 {
     public class ApiClass
     {
-        public async Task<List<string>> GetYouTubeVideos()
+        //function returns list of links from search
+        public async Task<List<string>> GetYouTubeVideos(string search)
+        {
+            var youtubeService = new YouTubeService(new BaseClientService.Initializer()
+            {
+                ApiKey = "AIzaSyBouPLVVOcmx2kdxm_o-j3anRs-MGUH558",
+                ApplicationName = this.GetType().ToString()
+            });
+            var searchListRequest = youtubeService.Search.List("snippet");
+            searchListRequest.Q = search; // Replace with your search term.
+            searchListRequest.MaxResults = 50;
+            // Call the search.list method to retrieve results matching the specified query term.
+            var searchListResponse = await searchListRequest.ExecuteAsync();
+            List<string> videos = new List<string>();
+            List<string> channels = new List<string>();
+            List<string> playlists = new List<string>();
+            // Add each result to the appropriate list, and then display the lists of
+            // matching videos, channels, and playlists.
+            var address = "https://www.youtube.com/embed/";
+            foreach (var searchResult in searchListResponse.Items)
+            {
+                videos.Add(string.Format("{0}{1}", address, searchResult.Id.VideoId));
+            }
+            
+            return videos;
+        }
+
+        //function returns list of channels from search
+        public async Task<List<string>> GetYouTubeChannels()
         {
             var youtubeService = new YouTubeService(new BaseClientService.Initializer()
             {
@@ -29,31 +57,40 @@ namespace Api
             searchListRequest.MaxResults = 50;
             // Call the search.list method to retrieve results matching the specified query term.
             var searchListResponse = await searchListRequest.ExecuteAsync();
-            List<string> videos = new List<string>();
+            
             List<string> channels = new List<string>();
             List<string> playlists = new List<string>();
-            // Add each result to the appropriate list, and then display the lists of
-            // matching videos, channels, and playlists.
-            var address = "https://www.youtube.com/watch?v=";
+            // Add each result to the appropriate list, and then display the lists of channels
             foreach (var searchResult in searchListResponse.Items)
             {
-                switch (searchResult.Id.Kind)
-                {
-                    case "youtube#video":
-                        videos.Add(string.Format("{0}{1}", address, searchResult.Id.VideoId));
-                        break;
-                    case "youtube#channel":
-                        channels.Add(string.Format("{0} ({1})", searchResult.Snippet.Title, searchResult.Id.ChannelId));
-                        break;
-                    case "youtube#playlist":
-                        playlists.Add(string.Format("{0} ({1})", searchResult.Snippet.Title, searchResult.Id.PlaylistId));
-                        break;
-                }
+                channels.Add(string.Format("{0} ({1})", searchResult.Snippet.Title, searchResult.Id.ChannelId));
             }
-            Console.WriteLine(string.Format("Videos:\n{0}\n", string.Join("\n", videos)));
-            Console.WriteLine(string.Format("Channels:\n{0}\n", string.Join("\n", channels)));
-            Console.WriteLine(string.Format("Playlists:\n{0}\n", string.Join("\n", playlists)));
-            return videos;
+
+            return channels;
+        }
+
+        public async Task<List<string>> GetYouTubePlaylist()
+        {
+            var youtubeService = new YouTubeService(new BaseClientService.Initializer()
+            {
+                ApiKey = "AIzaSyBouPLVVOcmx2kdxm_o-j3anRs-MGUH558",
+                ApplicationName = this.GetType().ToString()
+            });
+            var searchListRequest = youtubeService.Search.List("snippet");
+            searchListRequest.Q = "Pizza"; // Replace with your search term.
+            searchListRequest.MaxResults = 50;
+            // Call the search.list method to retrieve results matching the specified query term.
+            var searchListResponse = await searchListRequest.ExecuteAsync();
+           
+            List<string> playlists = new List<string>();
+            // Add each result to the appropriate list, and then display the lists of playlists.
+
+            foreach (var searchResult in searchListResponse.Items)
+            {
+                playlists.Add(string.Format("{0} ({1})", searchResult.Snippet.Title, searchResult.Id.PlaylistId));
+            }
+
+            return playlists;
         }
     }
 }
