@@ -9,6 +9,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using Api;
+
 namespace YouTubeBrowser
 {
     /// <summary>
@@ -16,28 +18,30 @@ namespace YouTubeBrowser
     /// </summary>
     public partial class MainWindow : Window
     {
-        //public MainWindow()
-        //{
-        //    InitializeComponent();
-        //}
+        private ApiClass api;
+
+        public MainWindow()
+        {
+            InitializeComponent();
+            api = new ApiClass();
+            //api.GetYouTubeVideos().GetAwaiter().GetResult();
+            //Console.ReadLine();
+
+        }
         private void pnlMainGrid_MouseUp(object sender, MouseButtonEventArgs e)
         {
             MessageBox.Show("You clicked me at " + e.GetPosition(this).ToString());
         }
 
-        private void File_Click_1(object sender, RoutedEventArgs e)
+        private async void File_Click_1(object sender, RoutedEventArgs e)
         {
-            
+            var videos = await api.GetYouTubeVideos();
+            textBox.Text = videos.Count.ToString();
         }
-        
-        private void LoadLinks()
+
+        private void linkListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-           
-            var api = new API();
 
-            List<string> links = api.GetVideoLinks;
-
-            linkListBox.ItemsSource = links;
         }
     }
 }

@@ -7,9 +7,7 @@
         xmlns:cef="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    
-       <!--<cef:ChromiumWebBrowser x:Name="Browser_Test" Address="https://www.youtube.com/embed/kOG0_qjKWEI"></cef:ChromiumWebBrowser>
-    </Grid>-->
+
     <Grid Name="pnlMainGrid" MouseUp="pnlMainGrid_MouseUp" Background="LightBlue">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -17,21 +15,24 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="25" />
         </Grid.RowDefinitions>
-        
+
         <Menu Grid.Row="0" >
-            <MenuItem Header="File"  Click="File_Click_1">
+            <MenuItem Header="File"  >
                 <MenuItem Header="Open Project"></MenuItem>
                 <MenuItem Header="Save Project"></MenuItem>
                 <MenuItem Header="Close Project"></MenuItem>
+                <MenuItem Header="Load Videos" Click="File_Click_1"></MenuItem>
                 <Separator></Separator>
                 <MenuItem Header="Exit"></MenuItem>
             </MenuItem>
             <MenuItem Header="Edit"></MenuItem>
         </Menu>
-        <TextBox Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged">
+        <TextBox x:Name="textBox" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
             Write Link Here
         </TextBox>
-		 <ListBox x:Name="linkListBox"/>
+        <cef:ChromiumWebBrowser Grid.Row="2" x:Name="Browser_Test" Address="https://www.youtube.com/embed/kOG0_qjKWEI">
+        </cef:ChromiumWebBrowser>
+
     </Grid>
 
 </Window>
