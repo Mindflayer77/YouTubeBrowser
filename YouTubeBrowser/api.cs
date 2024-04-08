@@ -31,17 +31,45 @@ namespace Api
             // Call the search.list method to retrieve results matching the specified query term.
             var searchListResponse = await searchListRequest.ExecuteAsync();
             List<string> videos = new List<string>();
-            List<string> channels = new List<string>();
-            List<string> playlists = new List<string>();
+            
             // Add each result to the appropriate list, and then display the lists of
             // matching videos, channels, and playlists.
             var address = "https://www.youtube.com/embed/";
             foreach (var searchResult in searchListResponse.Items)
             {
                 videos.Add(string.Format("{0}{1}", address, searchResult.Id.VideoId));
+            
             }
             
             return videos;
+        }
+
+
+        //function returns list of links from search
+        public async Task<List<string>> GetYouTubeVideosTitle(string search)
+        {
+            var youtubeService = new YouTubeService(new BaseClientService.Initializer()
+            {
+                ApiKey = "AIzaSyBouPLVVOcmx2kdxm_o-j3anRs-MGUH558",
+                ApplicationName = this.GetType().ToString()
+            });
+            var searchListRequest = youtubeService.Search.List("snippet");
+            searchListRequest.Q = search; // Replace with your search term.
+            searchListRequest.MaxResults = 50;
+            // Call the search.list method to retrieve results matching the specified query term.
+            var searchListResponse = await searchListRequest.ExecuteAsync();
+           
+            List<string> titles = new List<string>();
+            // Add each result to the appropriate list, and then display the lists of
+            // matching videos, channels, and playlists.
+            var address = "https://www.youtube.com/embed/";
+            foreach (var searchResult in searchListResponse.Items)
+            {
+                
+                titles.Add(string.Format("{0}{1}", searchResult.Snippet.Title));
+            }
+
+            return titles;
         }
 
         //function returns list of channels from search

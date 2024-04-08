@@ -41,7 +41,27 @@
 		
         <cef:ChromiumWebBrowser Grid.Row="2" x:Name="Browser_Test" Address="">
         </cef:ChromiumWebBrowser>
+	
+		<Button
+			x:Name="Next_Button" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="6" 
+			Click="Click_Next" Width="100" Height="170">
+			Next
+		</Button>
 
-    </Grid>
+		<Button
+			x:Name="Privious_Button" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="6"
+			Click="Click_Previous" Width="100" Height="170">
+			Previous
+		</Button>
+
+		<Button
+			x:Name="Add_to_playlist_Button" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="6"
+			Click="Click_add_to_playlist" Width="100" Height="170">
+			Add to playlist
+		</Button>
+
+
+
+	</Grid>
 
 </Window>
