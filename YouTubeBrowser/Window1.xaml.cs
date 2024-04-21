@@ -68,8 +68,8 @@ namespace YoutubeBrowser
                 // Save changes to the database
                 var lastAddedVideoTitle = playlist.Videos.LastOrDefault()?.Title;
                 Messages.showMessageBox("Video added to the playlist.", "Success", MessageBoxButton.OK);
-                playlist_textbox.Text = playlist.Videos.ToList()[3].Title;
-                //playlist_textbox.Text = lastAddedVideoTitle;
+                //playlist_textbox.Text = playlist.Videos.ToList()[3].Title;
+                playlist_textbox.Text = lastAddedVideoTitle;
             }
         }
         
