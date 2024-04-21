@@ -72,75 +72,7 @@ namespace YoutubeBrowser
                 //playlist_textbox.Text = lastAddedVideoTitle;
             }
         }
-        public async void Add_playlist_Video(object sender, RoutedEventArgs e, Video displayed_video)
-        {
-            try
-            {
-
-
-                using (var context = factory.CreateDbContext([]))
-                {
-                    // Check if the video already exists in the database
-                    var existingVideo = await context.Videos.FirstOrDefaultAsync(v => v.YoutubeId == displayed_video.YoutubeId);
-
-                    if (existingVideo == null)
-                    {
-                        // If the video doesn't exist, add it to the database
-                        context.Videos.Add(new Video()
-                        {
-                            YoutubeId = displayed_video.YoutubeId,
-                            Title = displayed_video.Title,
-                            Thumbnail_url = displayed_video.Thumbnail_url
-                        });
-                    }
-
-                    // Get the playlist
-                    var playlist = await context.Playlists.FirstOrDefaultAsync(p => p.Name == playlist_textbox.Text);
-
-                    if (playlist == null)
-                    {
-                        Messages.showMessageBox("Playlist not found.", "Error", MessageBoxButton.OK);
-                        return;
-                    }
-
-                    // Check if the video is already in the playlist
-                    var existingPlaylistVideo = await context.PlaylistsVideos
-                        .FirstOrDefaultAsync(pv => pv.PlaylistId == playlist.Id && pv.Video.YoutubeId == displayed_video.YoutubeId);
-
-                    if (existingPlaylistVideo != null)
-                    {
-                        Messages.showMessageBox("The video is already in the playlist.", "Cannot add the video", MessageBoxButton.OK);
-                        return;
-                    }
-
-                    // If the video is not in the playlist, add it
-                    Video videoToAdd;
-                    if (existingVideo != null)
-                    {
-                        videoToAdd = existingVideo;
-                    }
-                    else
-                    {
-                        videoToAdd = displayed_video;
-                    }
-
-                    context.PlaylistsVideos.Add(new PlaylistVideo()
-                    {
-                        PlaylistId = playlist.Id,
-                        VideoId = videoToAdd.Id
-                    });
-
-                    // Save changes to the database
-                    await context.SaveChangesAsync();
-                    Messages.showMessageBox("Video added to the playlist.", "Success", MessageBoxButton.OK);
-                    playlist_textbox.Text = playlist.Videos.ToList()[0].Title;
-                }
-            }
-            catch (Exception ex)
-            {
-                Messages.showMessageBox($"An error occurred: {ex.Message}", "Error", MessageBoxButton.OK);
-            }
-        }
+        
         private void Create_Button(string name)
         {
             int column = 0;
