@@ -1,0 +1,36 @@
+﻿ <Window x:Class="YoutubeBrowser.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="PlaylistWindow" Height="500" Width="300">
+    <ScrollViewer>
+        <Grid Name="pnlMainGrid" Background="LightBlue" >
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="Auto" />
+                <!-- Zmiana na Auto -->
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="playlist_textbox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,0,0,0"/>
+
+                <Button x:Name="Add" Click="Create_Playlist_Click" Content="Create new playlist" Grid.Column="1" Margin="0,0,0,0" />
+            </Grid>
+
+
+
+        </Grid>
+    </ScrollViewer>
+</Window>

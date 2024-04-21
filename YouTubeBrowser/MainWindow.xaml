@@ -1,37 +1,52 @@
-﻿<Window x:Class="YouTubeBrowser.MainWindow"
+﻿<Window x:Class="YoutubeBrowser.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:YouTubeBrowser"
+        xmlns:local="clr-namespace:YoutubeBrowser"
         xmlns:cef="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <!--<Grid>
-        <cef:ChromiumWebBrowser x:Name="Browser_Test" Address="https://www.youtube.com/embed/kOG0_qjKWEI"></cef:ChromiumWebBrowser>
-    </Grid>-->
-    <Grid Name="pnlMainGrid" MouseUp="pnlMainGrid_MouseUp" Background="LightBlue">
+
+    <Grid Name="pnlMainGrid" Background="LightBlue">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="30" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="25" />
         </Grid.RowDefinitions>
-        
-        <Menu Grid.Row="0" >
-            <MenuItem Header="File"  Click="File_Click_1">
-                <MenuItem Header="Open Project"></MenuItem>
-                <MenuItem Header="Save Project"></MenuItem>
-                <MenuItem Header="Close Project"></MenuItem>
-                <Separator></Separator>
-                <MenuItem Header="Exit"></MenuItem>
-            </MenuItem>
-            <MenuItem Header="Edit"></MenuItem>
-        </Menu>
-        <TextBox Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
-            Write Link Here
-        </TextBox>
 
+        <Menu Grid.Row="0" >
+            <MenuItem Header="Exit"  >
+                <MenuItem Header="Clear Playlists" Click="Clear_Playlists_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="45"></ColumnDefinition>
+                <ColumnDefinition Width="45"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="textBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Button x:Name="Search_Button" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="Click_Search"  Content="Search"/>
+            <Button x:Name="Add" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="Add_Click" Content="Add" />
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="10"></ColumnDefinition>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+        <cef:ChromiumWebBrowser Grid.Column="0" x:Name="Browser_Test" Address="" >
+        </cef:ChromiumWebBrowser>
+        <ScrollViewer x:Name="Scroll_viewer_1" Grid.Column="2">
+            <Viewbox StretchDirection="Both" Stretch="Fill">
+                <StackPanel x:Name="videosPanel">
+                   <!--Videos thumbnails are generated here dynamically-->
+                </StackPanel>
+            </Viewbox>
+        </ScrollViewer>
+        </Grid>
     </Grid>
 
 </Window>
