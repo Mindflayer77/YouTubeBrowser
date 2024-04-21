@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using CefSharp.DevTools.Network;
 using Microsoft.EntityFrameworkCore;
 using YoutubeBrowser.ApiService;
 using YoutubeBrowser.DbContexts;
@@ -26,6 +27,7 @@ namespace YoutubeBrowser
         private Dictionary<string, Video> videos = [];
         private Video displayed_video = new();
         private readonly YoutubeBrowserDbContextFactory factory;
+      
 
         public string search_text = "";
 
@@ -52,6 +54,7 @@ namespace YoutubeBrowser
         {
             videosPanel.Children.Clear();
         }
+       
 
         private void DisplayImages()
         {
@@ -88,6 +91,8 @@ namespace YoutubeBrowser
 
         private async void Click_Search(object sender, RoutedEventArgs e)
         {
+            Browser_Test.Visibility = Visibility.Visible;
+            RemovePlaylistScrollViewer();
             search_text = textBox.Text;
             videos.Clear();
             List<Video> tmp_videos = [];
@@ -116,6 +121,64 @@ namespace YoutubeBrowser
             window.Show();
         }
 
+        private async void YourPlaylists_Click(object sender, RoutedEventArgs e)
+        {
+            
+            DestroyImages();
+            
+            Browser_Test.Visibility = Visibility.Collapsed;
+
+            //new ScrollViewer for playlists
+            ScrollViewer playlistScrollViewer = new ScrollViewer();
+            playlistScrollViewer.VerticalScrollBarVisibility = ScrollBarVisibility.Auto;
+            playlistScrollViewer.HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled;
+            playlistScrollViewer.HorizontalAlignment = HorizontalAlignment.Left;
+
+            
+            StackPanel playlistStackPanel = new StackPanel();
+            playlistScrollViewer.Content = playlistStackPanel;
+
+            //load from DB to button
+            using (var context = factory.CreateDbContext([]))
+            {
+                var playlists = await context.Playlists.ToListAsync();
+
+                foreach (var playlist in playlists)
+                {
+                    var newButton = Create_Button(playlist.Name);
+                    playlistStackPanel.Children.Add(newButton);
+                }
+            }
+
+            // new scrollViewer to Grid
+            pnlMainGrid.Children.Add(playlistScrollViewer);
+            Grid.SetColumn(playlistScrollViewer, 0);
+            Grid.SetRow(playlistScrollViewer, 2);
+
+        }
+
+        //function to delete ScrollViewer with playlists
+        private void RemovePlaylistScrollViewer()
+        {
+            
+            foreach (UIElement child in pnlMainGrid.Children)
+            {
+                if (child is ScrollViewer)
+                {
+                    pnlMainGrid.Children.Remove(child);
+                    break; 
+                }
+            }
+        }
+
+        private Button Create_Button(string name)
+        {
+            Button newButton = new Button();
+            newButton.Content = name;
+            newButton.Width = 120;
+            newButton.Height = 25;
+            return newButton;
+        }
         private void Show_Click(object sender, RoutedEventArgs e)
         {
             List<Video> dBVideos;

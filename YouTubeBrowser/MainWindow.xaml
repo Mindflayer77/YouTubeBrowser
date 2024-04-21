@@ -37,16 +37,17 @@
                 <ColumnDefinition Width="10"></ColumnDefinition>
                 <ColumnDefinition Width="150"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-        <cef:ChromiumWebBrowser Grid.Column="0" x:Name="Browser_Test" Address="" >
-        </cef:ChromiumWebBrowser>
-        <ScrollViewer x:Name="Scroll_viewer_1" Grid.Column="2">
-            <Viewbox StretchDirection="Both" Stretch="Fill">
-                <StackPanel x:Name="videosPanel">
-                   <!--Videos thumbnails are generated here dynamically-->
-                </StackPanel>
-            </Viewbox>
-        </ScrollViewer>
+            <cef:ChromiumWebBrowser Grid.Column="0" x:Name="Browser_Test" Address="" >
+            </cef:ChromiumWebBrowser>
+            <ScrollViewer x:Name="Scroll_viewer_1" Grid.Column="2">
+                <Viewbox StretchDirection="Both" Stretch="Fill">
+                    <StackPanel x:Name="videosPanel">
+                        <!--Videos thumbnails are generated here dynamically-->
+                    </StackPanel>
+                </Viewbox>
+            </ScrollViewer>
         </Grid>
+        <Button Content="Your Playlists" HorizontalAlignment="Left" Height="25" Grid.Row="3" VerticalAlignment="Center" Width="130" Click="YourPlaylists_Click"/>
     </Grid>
 
 </Window>
