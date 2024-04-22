@@ -26,12 +26,14 @@
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="45"></ColumnDefinition>
                 <ColumnDefinition Width="45"></ColumnDefinition>
+                <ColumnDefinition Width="45"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <TextBox x:Name="textBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-            <Button x:Name="Search_Button" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="Click_Search"  Content="Search"/>
             <Button x:Name="Add" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="Add_Click" Content="Add" />
+            <Button x:Name="Search_Button" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="Click_Search"  Content="Search"/>
+            <Button x:Name="Delete" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="Click_Delete"  Content="Delete"/>
         </Grid>
-        <Grid Grid.Row="2">
+        <Grid x:Name="Central_Grid" Grid.Row="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="10"></ColumnDefinition>
@@ -40,14 +42,14 @@
             <cef:ChromiumWebBrowser Grid.Column="0" x:Name="Browser_Test" Address="" >
             </cef:ChromiumWebBrowser>
             <ScrollViewer x:Name="Scroll_viewer_1" Grid.Column="2">
-                <Viewbox StretchDirection="Both" Stretch="Fill">
+                <Viewbox StretchDirection="Both" VerticalAlignment="Top" Stretch="Uniform">
                     <StackPanel x:Name="videosPanel">
                         <!--Videos thumbnails are generated here dynamically-->
                     </StackPanel>
                 </Viewbox>
             </ScrollViewer>
         </Grid>
-        <Button Content="Your Playlists" HorizontalAlignment="Left" Height="25" Grid.Row="3" VerticalAlignment="Center" Width="130" Click="YourPlaylists_Click"/>
+        <Button Content="Your Playlists" HorizontalAlignment="Right" Height="25" Grid.Row="3" VerticalAlignment="Center" Width="130" Click="YourPlaylists_Click"/>
     </Grid>
 
 </Window>

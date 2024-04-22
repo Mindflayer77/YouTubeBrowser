@@ -25,9 +25,11 @@ namespace YoutubeBrowser
     {
         private readonly IYoutubeApi apiService;
         private Dictionary<string, Video> videos = [];
-        private Video displayed_video = new();
+        private Video? displayed_video = null;
         private readonly YoutubeBrowserDbContextFactory factory;
-      
+        private bool playlistsDisplayed = false;
+        private Playlist? displayed_playlist = null;
+        private ScrollViewer scrollViewer;
 
         public string search_text = "";
 
@@ -54,7 +56,7 @@ namespace YoutubeBrowser
         {
             videosPanel.Children.Clear();
         }
-       
+
 
         private void DisplayImages()
         {
@@ -68,6 +70,7 @@ namespace YoutubeBrowser
                 var image = new Image();
                 image.Tag = video.Key;
                 image.Source = bitmap;
+                image.MaxHeight = 50;
                 image.MouseLeftButtonDown += new MouseButtonEventHandler(Image_Click);
                 panel.Children.Add(image);
                 videosPanel.Children.Add(panel);
@@ -92,7 +95,7 @@ namespace YoutubeBrowser
         private async void Click_Search(object sender, RoutedEventArgs e)
         {
             Browser_Test.Visibility = Visibility.Visible;
-            RemovePlaylistScrollViewer();
+            //RemovePlaylistScrollViewer();
             search_text = textBox.Text;
             videos.Clear();
             List<Video> tmp_videos = [];
@@ -102,7 +105,7 @@ namespace YoutubeBrowser
             }
             catch(Exception ex)
             {
-                Messages.showMessageBox(ex.ToString(), "Cannot execute request", MessageBoxButton.OK);
+                Messages.showMessageBox("Cannot execute request", "Daily Youtube quota exceeded", MessageBoxButton.OK);
                 return;
             }
             foreach(var video in tmp_videos)
@@ -110,23 +113,65 @@ namespace YoutubeBrowser
                 videos[video.YoutubeId] = video;
             }
             DestroyImages();
+            if(videos.Count == 0) 
+            {
+                Messages.showMessageBox("Empty result", "No videos found", MessageBoxButton.OK);
+                displayed_video = null;
+                return;
+            }
             DisplayImages();
             Browser_Test.Address = GetEmbedAddress(videos.ElementAt(0).Value.YoutubeId);
             displayed_video = videos.ElementAt(0).Value;
         }
 
+        private void Update_Playlist()
+        {
+            //DestroyImages();
+            //using(var context = factory.CreateDbContext([]))
+            //{
+                
+            //}
+
+            // TODO: Implement a function which updates the diplayed videos from playlist if one video was deleted
+        }
+
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-            var window = new Window1(displayed_video);
+            if(displayed_video == null) 
+            {
+                Messages.showMessageBox( "No videos are currently displayed", "Cannot add video", MessageBoxButton.OK);
+                return;
+            }
+            var window = new AddVideoWindow(displayed_video);
+            window.Show();
+        }
+
+        private void Click_Delete(object sender, RoutedEventArgs e)
+        {
+            if (displayed_video == null)
+            {
+                Messages.showMessageBox("No videos are currently displayed", "Cannot delete video", MessageBoxButton.OK);
+                return;
+            }
+            var window = new DeleteVideoWindow(displayed_video);
             window.Show();
         }
 
         private async void YourPlaylists_Click(object sender, RoutedEventArgs e)
         {
-            
-            DestroyImages();
-            
-            Browser_Test.Visibility = Visibility.Collapsed;
+            if(playlistsDisplayed)
+            {
+                Central_Grid.Children.Remove(scrollViewer);
+                Central_Grid.ColumnDefinitions.RemoveRange(Central_Grid.ColumnDefinitions.Count - 2, 2);
+                playlistsDisplayed = false;
+                return;
+            }
+            ColumnDefinition separatorColumn = new ColumnDefinition();
+            separatorColumn.Width = new GridLength(10);
+            Central_Grid.ColumnDefinitions.Add(separatorColumn);
+            ColumnDefinition playlistColumn = new ColumnDefinition();
+            playlistColumn.Width = new GridLength(150);
+            Central_Grid.ColumnDefinitions.Add(playlistColumn);
 
             //new ScrollViewer for playlists
             ScrollViewer playlistScrollViewer = new ScrollViewer();
@@ -145,16 +190,18 @@ namespace YoutubeBrowser
 
                 foreach (var playlist in playlists)
                 {
-                    var newButton = Create_Button(playlist.Name);
+                    var newButton = Create_Playlist_Button(playlist.Name, playlistColumn.Width);
                     playlistStackPanel.Children.Add(newButton);
                 }
             }
+        
 
             // new scrollViewer to Grid
-            pnlMainGrid.Children.Add(playlistScrollViewer);
-            Grid.SetColumn(playlistScrollViewer, 0);
+            Central_Grid.Children.Add(playlistScrollViewer);
+            Grid.SetColumn(playlistScrollViewer, Central_Grid.ColumnDefinitions.Count - 1);
             Grid.SetRow(playlistScrollViewer, 2);
-
+            playlistsDisplayed = true;
+            scrollViewer = playlistScrollViewer;
         }
 
         //function to delete ScrollViewer with playlists
@@ -171,12 +218,31 @@ namespace YoutubeBrowser
             }
         }
 
-        private Button Create_Button(string name)
+        private void Playlist_Button_Click(object sender, RoutedEventArgs e)
+        {
+            videos.Clear();
+            string playlist_name = ((Button)sender).Content.ToString();
+            textBox.Text = "";
+            using (var context = factory.CreateDbContext([]))
+            {
+                var playlist = context.Playlists.Where(p => p.Name == playlist_name).Include(p => p.Videos).First();
+                displayed_playlist = playlist;
+                foreach (var video in playlist.Videos)
+                {
+                    videos[video.YoutubeId] = video;
+                }
+            }
+            DestroyImages();
+            DisplayImages();
+        }
+
+        private Button Create_Playlist_Button(string name, GridLength width)
         {
             Button newButton = new Button();
             newButton.Content = name;
-            newButton.Width = 120;
+            newButton.Width = width.Value;
             newButton.Height = 25;
+            newButton.Click += new RoutedEventHandler(Playlist_Button_Click);
             return newButton;
         }
         private void Show_Click(object sender, RoutedEventArgs e)

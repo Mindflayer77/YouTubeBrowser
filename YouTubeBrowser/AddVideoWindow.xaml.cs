@@ -18,17 +18,14 @@ using YoutubeBrowser.Utility;
 
 namespace YoutubeBrowser
 {
-    /// <summary>
-    /// Logika interakcji dla klasy Window1.xaml
-    /// </summary>
 
-    public partial class Window1 : Window
+    public partial class AddVideoWindow : Window
     {
         private readonly YoutubeBrowserDbContextFactory factory;
         private List<Button> buttons = [];
         private Video video;
 
-        public Window1(Video p_video)
+        public AddVideoWindow(Video p_video)
         {
             InitializeComponent();
             factory = new YoutubeBrowserDbContextFactory();
@@ -38,12 +35,10 @@ namespace YoutubeBrowser
 
         
         //Funckja do wstawiania filmów do bazy danych
-        // Do poprawienia
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             
             string playlist_name = ((Button)sender).Content.ToString();
-            playlist_textbox.Text = playlist_name;
             using (var context = factory.CreateDbContext([]))
             {
                 var playlist = context.Playlists.Where(p => p.Name == playlist_name).Include(p => p.Videos).First();
@@ -65,11 +60,8 @@ namespace YoutubeBrowser
                     VideoId = video.Id
                 });
 
-                // Save changes to the database
-                var lastAddedVideoTitle = playlist.Videos.LastOrDefault()?.Title;
+                //var lastAddedVideoTitle = playlist.Videos.LastOrDefault()?.Title;
                 Messages.showMessageBox("Video added to the playlist.", "Success", MessageBoxButton.OK);
-                //playlist_textbox.Text = playlist.Videos.ToList()[1].Title;
-                playlist_textbox.Text = lastAddedVideoTitle;
             }
         }
         

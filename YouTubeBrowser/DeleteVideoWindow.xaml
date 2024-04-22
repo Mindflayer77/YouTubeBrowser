@@ -1,0 +1,32 @@
+﻿<Window x:Class="YoutubeBrowser.DeleteVideoWindow"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="DeleteVideoWindow" Height="500" Width="300">
+    <ScrollViewer>
+        <Grid Name="pnlMainGrid" Background="LightBlue" VerticalAlignment="Top">
+            
+            <Grid.RowDefinitions >
+                
+            </Grid.RowDefinitions>
+
+
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+             
+
+           
+            </Grid>
+
+
+
+        </Grid>
+    </ScrollViewer>
+</Window>
