@@ -267,7 +267,8 @@ namespace YoutubeBrowser
                        
                         //save changes
                         context.SaveChanges();
-                        
+                        //update Playlist's ScrollViewer
+                        UpdatePlaylistView(sender, e);
                     }
                 }
             }
@@ -275,7 +276,15 @@ namespace YoutubeBrowser
             e.Handled = true;
         }
 
-        
+        private void UpdatePlaylistView(object sender, RoutedEventArgs e)
+        {
+            RemovePlaylistScrollViewer();
+            YourPlaylists_Click(sender, e);
+            YourPlaylists_Click(sender, e);
+        }
+
+
+
         private Button Create_Playlist_Button(string name, GridLength width)
         {
             Button newButton = new Button();
