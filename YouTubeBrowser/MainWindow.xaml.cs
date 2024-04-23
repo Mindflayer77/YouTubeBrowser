@@ -220,10 +220,12 @@ namespace YoutubeBrowser
 
         private void Playlist_Button_Click(object sender, RoutedEventArgs e)
         {
+
             videos.Clear();
             string playlist_name = ((Button)sender).Content.ToString();
             textBox.Text = "";
-            using (var context = factory.CreateDbContext([]))
+           
+                using (var context = factory.CreateDbContext([]))
             {
                 var playlist = context.Playlists.Where(p => p.Name == playlist_name).Include(p => p.Videos).First();
                 displayed_playlist = playlist;
@@ -234,8 +236,46 @@ namespace YoutubeBrowser
             }
             DestroyImages();
             DisplayImages();
+
+            
+        }
+        private void Playlist_Button_PreviewMouseRightButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            
+            string playlist_name = ((Button)sender).Content.ToString();
+
+            // box with appying 
+            MessageBoxResult result = MessageBox.Show($"Are you sure, that you whet to delete the playlist '{playlist_name}'?", "apply removing", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+            // if result is true
+            if (result == MessageBoxResult.Yes)
+            {
+                
+                using (var context = factory.CreateDbContext([]))
+                {
+                    //playlist to delete
+                    var playlist = context.Playlists.FirstOrDefault(p => p.Name == playlist_name);
+                    
+                    if (playlist != null)
+                    {
+                        //columns with PlaylistId for removing
+                        var relatedRecordsfromPlaylist = context.PlaylistsVideos.Where(x => x.PlaylistId == playlist.Id);
+
+                        //removing data from DB Playlist and PlaylistVideo
+                        context.PlaylistsVideos.RemoveRange(relatedRecordsfromPlaylist);  //removing columns                                           
+                        context.Playlists.Remove(playlist);
+                       
+                        //save changes
+                        context.SaveChanges();
+                        
+                    }
+                }
+            }
+            // handle click the button
+            e.Handled = true;
         }
 
+        
         private Button Create_Playlist_Button(string name, GridLength width)
         {
             Button newButton = new Button();
@@ -243,6 +283,10 @@ namespace YoutubeBrowser
             newButton.Width = width.Value;
             newButton.Height = 25;
             newButton.Click += new RoutedEventHandler(Playlist_Button_Click);
+
+            //right click to delete
+            newButton.PreviewMouseRightButtonDown += new MouseButtonEventHandler(Playlist_Button_PreviewMouseRightButtonDown);
+
             return newButton;
         }
         private void Show_Click(object sender, RoutedEventArgs e)
