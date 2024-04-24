@@ -19,6 +19,8 @@
         <Menu Grid.Row="0" >
             <MenuItem Header="Exit"  >
                 <MenuItem Header="Clear Playlists" Click="Clear_Playlists_Click"></MenuItem>
+                <Separator></Separator>
+                <MenuItem Header="Exit"></MenuItem>
             </MenuItem>
         </Menu>
         <Grid Grid.Row="1">
