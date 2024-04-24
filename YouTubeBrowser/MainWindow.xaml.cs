@@ -92,6 +92,7 @@ namespace YoutubeBrowser
         {
             if (displayed_video == null)
             {
+                Messages.showMessageBox("No videos are currently displayed", "Cannot add video", MessageBoxButton.OK);
                 return;
             }
             var window = new AddVideoWindow(displayed_video);
@@ -124,7 +125,6 @@ namespace YoutubeBrowser
                 {
                     return;
                 }
-                Messages.showMessageBox("No videos are currently displayed", "Cannot add video", MessageBoxButton.OK);
 
                 DestroyImages();
                 var playlist = context.Playlists.Where(p => p.Name == displayed_playlist.Name).Include(p => p.Videos).First();
