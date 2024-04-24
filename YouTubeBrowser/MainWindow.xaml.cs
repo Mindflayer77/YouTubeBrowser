@@ -78,50 +78,15 @@ namespace YoutubeBrowser
             }
         }
 
-        private int GetClickedVideoId(string thumbnailUrl)
-        {
-            using (var context = factory.CreateDbContext([]))
-            {
-                var video = context.Videos.FirstOrDefault(v => v.Thumbnail_url == thumbnailUrl);
-                if (video != null)
-                {
-                    return video.Id;
-                }
-                else
-                {
-                    // error nie ma Thumbnail_url
-                    return -1; 
-                }
-            }
-        }
-        private int GetPlaylistId(Button playlistButton)
-        {
-            if (playlistButton != null && playlistButton.Tag != null && playlistButton.Tag is int)
-            {
-                return (int)playlistButton.Tag;
-            }
-            else
-            {
-                // error niepoprawny tag
-                return -1;
-            }
-        }
-
         private void Image_RightClick(object sender, MouseButtonEventArgs e)
         {
-            string thumbnailUrl = ((sender as Image).Source as BitmapImage).UriSource.AbsoluteUri;
-            int videoId = GetClickedVideoId(thumbnailUrl);
-            int PlaylistId=GetPlaylistId(sender as Button);
-            if (videoId != -1)
-            {
-                Remove_videos(sender, PlaylistId, videoId);
-            }
-            else
-            {
-                // wypiesanie bledu
-            }
-        }
+            if (displayed_playlist == null)
+                return;
+            string video_id = ((Image)sender).Tag.ToString();
 
+            Remove_video_from_displayed_playlist(video_id);
+            Update_Playlist_Videos();
+        }
 
         private void Clear_Videos_Click(object sender, RoutedEventArgs e)
         {
@@ -148,7 +113,7 @@ namespace YoutubeBrowser
             {
                 tmp_videos = await apiService.GetVideos(search_text, 10);
             }
-            catch(Exception ex)
+            catch(Exception)
             {
                 Messages.showMessageBox("Cannot execute request", "Daily Youtube quota exceeded", MessageBoxButton.OK);
                 return;
@@ -172,13 +137,15 @@ namespace YoutubeBrowser
 
         private void Update_Playlist_Videos()
         {
-
+            videos.Clear();
             using (var context = factory.CreateDbContext([]))
             {
                 if (displayed_playlist == null)
                 {
                     return;
                 }
+                Messages.showMessageBox("No videos are currently displayed", "Cannot add video", MessageBoxButton.OK);
+
                 DestroyImages();
                 var playlist = context.Playlists.Where(p => p.Name == displayed_playlist.Name).Include(p => p.Videos).First();
                 foreach (var video in playlist.Videos.ToList())
@@ -201,7 +168,9 @@ namespace YoutubeBrowser
             window.ShowDialog();
             Update_Playlist_Videos();
             if(playlistsDisplayed)
+            {
                 UpdatePlaylistView();
+            }
         }
 
         private void Click_Delete(object sender, RoutedEventArgs e)
@@ -283,7 +252,7 @@ namespace YoutubeBrowser
             string playlist_name = ((Button)sender).Content.ToString();
             textBox.Text = "";
            
-                using (var context = factory.CreateDbContext([]))
+            using (var context = factory.CreateDbContext([]))
             {
                 var playlist = context.Playlists.Where(p => p.Name == playlist_name).Include(p => p.Videos).First();
                 displayed_playlist = playlist;
@@ -330,6 +299,7 @@ namespace YoutubeBrowser
                             if(playlist.Name == displayed_playlist.Name)
                             {
                                 DestroyImages();
+                                displayed_playlist = null;
                             }
 
                         }
@@ -347,38 +317,26 @@ namespace YoutubeBrowser
             Create_Playlist_ScrollViewer();
         }
 
-        private void Remove_videos(object sender, int playlistId, int videoIdtoremove)
+        private void Remove_video_from_displayed_playlist(string videoId)
         {
-            var plId_delete = playlistId;
-            // box with appying 
-            MessageBoxResult result = MessageBox.Show($"Are you sure you want to delete the video about Id '{videoIdtoremove}'?", "Confirm deletion", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            MessageBoxResult result = MessageBox.Show($"Are you sure you want to delete the video ?", "Confirm deletion", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
-            // if result is true
             if (result == MessageBoxResult.Yes)
             {
                 using (var context = factory.CreateDbContext([]))
                 {
-                    // Delete all records with videoIdtoremove
-                    var relatedRecordsToRemove = context.PlaylistsVideos.Where(pv => pv.VideoId == videoIdtoremove && pv.PlaylistId==plId_delete).ToList();
-                    textBox.Text = plId_delete.ToString();
-                    context.PlaylistsVideos.RemoveRange(relatedRecordsToRemove);
-                    context.SaveChanges();
-                    
+                    var playlist = context.Playlists.Where(p => p.Name == displayed_playlist.Name).Include(p => p.Videos).First();
 
-                    var videoToRemove = context.Videos.FirstOrDefault(v => v.Id == videoIdtoremove);
-                   
-
-                    if (videoToRemove != null)
+                    try
                     {
-                        // usuwanie z Video, dodac sprawdzenie czy istnieje w innych Playlist
-                        //context.Videos.Remove(videoToRemove);
-                       
+                        var video_to_remove = playlist.Videos.Where(v => v.YoutubeId == videoId).First();
+                        playlist.Videos.Remove(video_to_remove);
                         context.SaveChanges();
-                       
                     }
-                    else
+                    catch (Exception)
                     {
-                       
+                        Messages.showMessageBox("Error", "Cannot delete the video", MessageBoxButton.OK);
+                        return;
                     }
                 }
             }
@@ -409,9 +367,6 @@ namespace YoutubeBrowser
             if(dBVideos.Count() == 0) { textBox.Text = "No Videos to display"; }
             else { textBox.Text = dBVideos[0].Title + dBVideos.Count().ToString(); }
         }
-
-
-
     }
 }
 
