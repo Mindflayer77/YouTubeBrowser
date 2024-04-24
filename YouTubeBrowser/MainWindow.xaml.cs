@@ -72,10 +72,56 @@ namespace YoutubeBrowser
                 image.Source = bitmap;
                 image.MaxHeight = 50;
                 image.MouseLeftButtonDown += new MouseButtonEventHandler(Image_Click);
+                image.MouseRightButtonDown += new MouseButtonEventHandler(Image_RightClick);
                 panel.Children.Add(image);
                 videosPanel.Children.Add(panel);
             }
         }
+
+        private int GetClickedVideoId(string thumbnailUrl)
+        {
+            using (var context = factory.CreateDbContext([]))
+            {
+                var video = context.Videos.FirstOrDefault(v => v.Thumbnail_url == thumbnailUrl);
+                if (video != null)
+                {
+                    return video.Id;
+                }
+                else
+                {
+                    // error nie ma Thumbnail_url
+                    return -1; 
+                }
+            }
+        }
+        private int GetPlaylistId(Button playlistButton)
+        {
+            if (playlistButton != null && playlistButton.Tag != null && playlistButton.Tag is int)
+            {
+                return (int)playlistButton.Tag;
+            }
+            else
+            {
+                // error niepoprawny tag
+                return -1;
+            }
+        }
+
+        private void Image_RightClick(object sender, MouseButtonEventArgs e)
+        {
+            string thumbnailUrl = ((sender as Image).Source as BitmapImage).UriSource.AbsoluteUri;
+            int videoId = GetClickedVideoId(thumbnailUrl);
+            int PlaylistId=GetPlaylistId(sender as Button);
+            if (videoId != -1)
+            {
+                Remove_videos(sender, PlaylistId, videoId);
+            }
+            else
+            {
+                // wypiesanie bledu
+            }
+        }
+
 
         private void Clear_Videos_Click(object sender, RoutedEventArgs e)
         {
@@ -215,6 +261,8 @@ namespace YoutubeBrowser
                 foreach (var playlist in playlists)
                 {
                     var newButton = Create_Playlist_Button(playlist.Name, playlistColumn.Width);
+                    newButton.Tag = playlist.Id;
+                    newButton.Click += Playlist_Button_Click;
                     playlistStackPanel.Children.Add(newButton);
                 }
             }
@@ -254,7 +302,7 @@ namespace YoutubeBrowser
             string playlist_name = ((Button)sender).Content.ToString();
 
             // box with appying 
-            MessageBoxResult result = MessageBox.Show($"Are you sure, that you whet to delete the playlist '{playlist_name}'?", "apply removing", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            MessageBoxResult result = MessageBox.Show($"Are you sure you want to delete the playlist '{playlist_name}'?", "Confirm deletion", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
             // if result is true
             if (result == MessageBoxResult.Yes)
@@ -271,7 +319,7 @@ namespace YoutubeBrowser
                         var relatedRecordsfromPlaylist = context.PlaylistsVideos.Where(x => x.PlaylistId == playlist.Id);
 
                         //removing data from DB Playlist and PlaylistVideo
-                        context.PlaylistsVideos.RemoveRange(relatedRecordsfromPlaylist);  //removing columns                                           
+                        context.PlaylistsVideos.RemoveRange(relatedRecordsfromPlaylist);  //removing records                                           
                         context.Playlists.Remove(playlist);
                        
                         //save changes
@@ -299,6 +347,42 @@ namespace YoutubeBrowser
             Create_Playlist_ScrollViewer();
         }
 
+        private void Remove_videos(object sender, int playlistId, int videoIdtoremove)
+        {
+            var plId_delete = playlistId;
+            // box with appying 
+            MessageBoxResult result = MessageBox.Show($"Are you sure you want to delete the video about Id '{videoIdtoremove}'?", "Confirm deletion", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+            // if result is true
+            if (result == MessageBoxResult.Yes)
+            {
+                using (var context = factory.CreateDbContext([]))
+                {
+                    // Delete all records with videoIdtoremove
+                    var relatedRecordsToRemove = context.PlaylistsVideos.Where(pv => pv.VideoId == videoIdtoremove && pv.PlaylistId==plId_delete).ToList();
+                    textBox.Text = plId_delete.ToString();
+                    context.PlaylistsVideos.RemoveRange(relatedRecordsToRemove);
+                    context.SaveChanges();
+                    
+
+                    var videoToRemove = context.Videos.FirstOrDefault(v => v.Id == videoIdtoremove);
+                   
+
+                    if (videoToRemove != null)
+                    {
+                        // usuwanie z Video, dodac sprawdzenie czy istnieje w innych Playlist
+                        //context.Videos.Remove(videoToRemove);
+                       
+                        context.SaveChanges();
+                       
+                    }
+                    else
+                    {
+                       
+                    }
+                }
+            }
+        }
 
 
         private Button Create_Playlist_Button(string name, GridLength width)
@@ -326,5 +410,9 @@ namespace YoutubeBrowser
             else { textBox.Text = dBVideos[0].Title + dBVideos.Count().ToString(); }
         }
 
+
+
     }
 }
+
+
