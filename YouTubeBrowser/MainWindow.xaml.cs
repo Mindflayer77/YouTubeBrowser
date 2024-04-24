@@ -95,7 +95,6 @@ namespace YoutubeBrowser
         private async void Click_Search(object sender, RoutedEventArgs e)
         {
             Browser_Test.Visibility = Visibility.Visible;
-            //RemovePlaylistScrollViewer();
             search_text = textBox.Text;
             videos.Clear();
             List<Video> tmp_videos = [];
@@ -122,17 +121,27 @@ namespace YoutubeBrowser
             DisplayImages();
             Browser_Test.Address = GetEmbedAddress(videos.ElementAt(0).Value.YoutubeId);
             displayed_video = videos.ElementAt(0).Value;
+            displayed_playlist = null;
         }
 
-        private void Update_Playlist()
+        private void Update_Playlist_Videos()
         {
-            //DestroyImages();
-            //using(var context = factory.CreateDbContext([]))
-            //{
-                
-            //}
 
-            // TODO: Implement a function which updates the diplayed videos from playlist if one video was deleted
+            using (var context = factory.CreateDbContext([]))
+            {
+                if (displayed_playlist == null)
+                {
+                    return;
+                }
+                DestroyImages();
+                var playlist = context.Playlists.Where(p => p.Name == displayed_playlist.Name).Include(p => p.Videos).First();
+                foreach (var video in playlist.Videos.ToList())
+                {
+                    videos[video.YoutubeId] = video;
+                }
+
+            }
+            DisplayImages();
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)
@@ -143,7 +152,10 @@ namespace YoutubeBrowser
                 return;
             }
             var window = new AddVideoWindow(displayed_video);
-            window.Show();
+            window.ShowDialog();
+            Update_Playlist_Videos();
+            if(playlistsDisplayed)
+                UpdatePlaylistView();
         }
 
         private void Click_Delete(object sender, RoutedEventArgs e)
@@ -155,17 +167,29 @@ namespace YoutubeBrowser
             }
             var window = new DeleteVideoWindow(displayed_video);
             window.Show();
+            Update_Playlist_Videos();
         }
 
-        private async void YourPlaylists_Click(object sender, RoutedEventArgs e)
+        private void YourPlaylists_Click(object sender, RoutedEventArgs e)
         {
             if(playlistsDisplayed)
             {
-                Central_Grid.Children.Remove(scrollViewer);
-                Central_Grid.ColumnDefinitions.RemoveRange(Central_Grid.ColumnDefinitions.Count - 2, 2);
+                RemovePlaylistScrollViewer();
                 playlistsDisplayed = false;
                 return;
             }
+            Create_Playlist_ScrollViewer();
+        }
+
+        //function to delete ScrollViewer with playlists
+        private void RemovePlaylistScrollViewer()
+        {
+            Central_Grid.Children.Remove(scrollViewer);
+            Central_Grid.ColumnDefinitions.RemoveRange(Central_Grid.ColumnDefinitions.Count - 2, 2);
+        }
+
+        private async void Create_Playlist_ScrollViewer()
+        {
             ColumnDefinition separatorColumn = new ColumnDefinition();
             separatorColumn.Width = new GridLength(10);
             Central_Grid.ColumnDefinitions.Add(separatorColumn);
@@ -179,7 +203,7 @@ namespace YoutubeBrowser
             playlistScrollViewer.HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled;
             playlistScrollViewer.HorizontalAlignment = HorizontalAlignment.Left;
 
-            
+
             StackPanel playlistStackPanel = new StackPanel();
             playlistScrollViewer.Content = playlistStackPanel;
 
@@ -194,7 +218,7 @@ namespace YoutubeBrowser
                     playlistStackPanel.Children.Add(newButton);
                 }
             }
-        
+
 
             // new scrollViewer to Grid
             Central_Grid.Children.Add(playlistScrollViewer);
@@ -202,20 +226,6 @@ namespace YoutubeBrowser
             Grid.SetRow(playlistScrollViewer, 2);
             playlistsDisplayed = true;
             scrollViewer = playlistScrollViewer;
-        }
-
-        //function to delete ScrollViewer with playlists
-        private void RemovePlaylistScrollViewer()
-        {
-            
-            foreach (UIElement child in pnlMainGrid.Children)
-            {
-                if (child is ScrollViewer)
-                {
-                    pnlMainGrid.Children.Remove(child);
-                    break; 
-                }
-            }
         }
 
         private void Playlist_Button_Click(object sender, RoutedEventArgs e)
@@ -236,9 +246,8 @@ namespace YoutubeBrowser
             }
             DestroyImages();
             DisplayImages();
-
-            
         }
+
         private void Playlist_Button_PreviewMouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
             
@@ -268,7 +277,15 @@ namespace YoutubeBrowser
                         //save changes
                         context.SaveChanges();
                         //update Playlist's ScrollViewer
-                        UpdatePlaylistView(sender, e);
+                        if(displayed_playlist != null)
+                        {
+                            if(playlist.Name == displayed_playlist.Name)
+                            {
+                                DestroyImages();
+                            }
+
+                        }
+                        UpdatePlaylistView();
                     }
                 }
             }
@@ -276,11 +293,10 @@ namespace YoutubeBrowser
             e.Handled = true;
         }
 
-        private void UpdatePlaylistView(object sender, RoutedEventArgs e)
+        private void UpdatePlaylistView()
         {
             RemovePlaylistScrollViewer();
-            YourPlaylists_Click(sender, e);
-            YourPlaylists_Click(sender, e);
+            Create_Playlist_ScrollViewer();
         }
 
 
@@ -298,6 +314,7 @@ namespace YoutubeBrowser
 
             return newButton;
         }
+
         private void Show_Click(object sender, RoutedEventArgs e)
         {
             List<Video> dBVideos;
