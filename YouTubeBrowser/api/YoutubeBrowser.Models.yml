@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: YoutubeBrowser.Models
+  commentId: N:YoutubeBrowser.Models
+  id: YoutubeBrowser.Models
+  children:
+  - YoutubeBrowser.Models.Playlist
+  - YoutubeBrowser.Models.PlaylistVideo
+  - YoutubeBrowser.Models.Video
+  langs:
+  - csharp
+  - vb
+  name: YoutubeBrowser.Models
+  nameWithType: YoutubeBrowser.Models
+  fullName: YoutubeBrowser.Models
+  type: Namespace
+  assemblies:
+  - YoutubeBrowser
+references:
+- uid: YoutubeBrowser.Models.Playlist
+  commentId: T:YoutubeBrowser.Models.Playlist
+  parent: YoutubeBrowser.Models
+  href: YoutubeBrowser.Models.Playlist.html
+  name: Playlist
+  nameWithType: Playlist
+  fullName: YoutubeBrowser.Models.Playlist
+- uid: YoutubeBrowser.Models.PlaylistVideo
+  commentId: T:YoutubeBrowser.Models.PlaylistVideo
+  href: YoutubeBrowser.Models.PlaylistVideo.html
+  name: PlaylistVideo
+  nameWithType: PlaylistVideo
+  fullName: YoutubeBrowser.Models.PlaylistVideo
+- uid: YoutubeBrowser.Models.Video
+  commentId: T:YoutubeBrowser.Models.Video
+  parent: YoutubeBrowser.Models
+  href: YoutubeBrowser.Models.Video.html
+  name: Video
+  nameWithType: Video
+  fullName: YoutubeBrowser.Models.Video
+- uid: YoutubeBrowser.Models
+  commentId: N:YoutubeBrowser.Models
+  href: YoutubeBrowser.html
+  name: YoutubeBrowser.Models
+  nameWithType: YoutubeBrowser.Models
+  fullName: YoutubeBrowser.Models
+  spec.csharp:
+  - uid: YoutubeBrowser
+    name: YoutubeBrowser
+    href: YoutubeBrowser.html
+  - name: .
+  - uid: YoutubeBrowser.Models
+    name: Models
+    href: YoutubeBrowser.Models.html
+  spec.vb:
+  - uid: YoutubeBrowser
+    name: YoutubeBrowser
+    href: YoutubeBrowser.html
+  - name: .
+  - uid: YoutubeBrowser.Models
+    name: Models
+    href: YoutubeBrowser.Models.html

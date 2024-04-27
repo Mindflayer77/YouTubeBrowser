@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: YoutubeBrowser.Utility
+  commentId: N:YoutubeBrowser.Utility
+  id: YoutubeBrowser.Utility
+  children:
+  - YoutubeBrowser.Utility.Messages
+  langs:
+  - csharp
+  - vb
+  name: YoutubeBrowser.Utility
+  nameWithType: YoutubeBrowser.Utility
+  fullName: YoutubeBrowser.Utility
+  type: Namespace
+  assemblies:
+  - YoutubeBrowser
+references:
+- uid: YoutubeBrowser.Utility.Messages
+  commentId: T:YoutubeBrowser.Utility.Messages
+  href: YoutubeBrowser.Utility.Messages.html
+  name: Messages
+  nameWithType: Messages
+  fullName: YoutubeBrowser.Utility.Messages

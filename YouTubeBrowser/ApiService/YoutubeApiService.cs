@@ -15,10 +15,19 @@ using YoutubeBrowser.Models;
 
 namespace YoutubeBrowser.ApiService
 {
+    /// <summary>
+    /// Methods of interacting with the YouTube data API to download videos 
+    /// </summary>
     public class YoutubeApiService : IYoutubeApi
     {
+        /// <summary>
+        /// Represents the YouTube service used for API requests.
+        /// </summary>
         private readonly YouTubeService service;
 
+        /// <summary>
+        /// Initiates a new instance of the YoutubeApiService class with the default API key and application name.
+        /// </summary>
         public YoutubeApiService()
         {
             service = new YouTubeService(new BaseClientService.Initializer()
@@ -28,6 +37,11 @@ namespace YoutubeBrowser.ApiService
             });
         }
 
+        /// <summary>
+        /// Parses a SearchResult object into a Video object.
+        /// </summary>
+        /// <param name="searchResult">Object to parse</param>
+        /// <returns>Model with parsed data</returns>
         private static Models.Video ParseVideo(SearchResult searchResult)
         {
             return new Models.Video()
@@ -38,7 +52,13 @@ namespace YoutubeBrowser.ApiService
             };
         }
 
-        //function returns list of links from search
+        //
+        /// <summary>
+        ///Downloads a list of YouTube videos based on specific search criteria. 
+        /// </summary>
+        /// <param name="search">Search request to perform</param>
+        /// <param name="video_n">The maximum number of videos to download.</param>
+        /// <returns>List of videos</returns>
         public async Task<List<Models.Video>> GetVideos(string search, int video_n)
         {
             var searchListRequest = service.Search.List("snippet");

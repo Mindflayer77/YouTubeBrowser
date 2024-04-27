@@ -1,0 +1,351 @@
+{
+  "source_base_path": "C:/Users/Arina/Downloads/YouTubeBrowser-second_window/YouTubeBrowser-second_window",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "YouTubeBrowser/api/YoutubeBrowser.AddVideoWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/api/YoutubeBrowser.AddVideoWindow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "YouTubeBrowser/api/YoutubeBrowser.ApiService.IYoutubeApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/api/YoutubeBrowser.ApiService.IYoutubeApi.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "YouTubeBrowser/api/YoutubeBrowser.ApiService.YoutubeApiService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/api/YoutubeBrowser.ApiService.YoutubeApiService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "YouTubeBrowser/api/YoutubeBrowser.ApiService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/api/YoutubeBrowser.ApiService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "YouTubeBrowser/api/YoutubeBrowser.App.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/api/YoutubeBrowser.App.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "YouTubeBrowser/api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "YouTubeBrowser/api/YoutubeBrowser.DbContexts.YoutubeBrowserDbContextFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/api/YoutubeBrowser.DbContexts.YoutubeBrowserDbContextFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "YouTubeBrowser/api/YoutubeBrowser.DbContexts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/api/YoutubeBrowser.DbContexts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "YouTubeBrowser/api/YoutubeBrowser.DeleteVideoWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/api/YoutubeBrowser.DeleteVideoWindow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "YouTubeBrowser/api/YoutubeBrowser.MainWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/api/YoutubeBrowser.MainWindow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "YouTubeBrowser/api/YoutubeBrowser.Migrations.initial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/api/YoutubeBrowser.Migrations.initial.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "YouTubeBrowser/api/YoutubeBrowser.Migrations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/api/YoutubeBrowser.Migrations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "YouTubeBrowser/api/YoutubeBrowser.Models.Playlist.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/api/YoutubeBrowser.Models.Playlist.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "YouTubeBrowser/api/YoutubeBrowser.Models.PlaylistVideo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/api/YoutubeBrowser.Models.PlaylistVideo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "YouTubeBrowser/api/YoutubeBrowser.Models.Video.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/api/YoutubeBrowser.Models.Video.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "YouTubeBrowser/api/YoutubeBrowser.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/api/YoutubeBrowser.Models.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "YouTubeBrowser/api/YoutubeBrowser.Temporary.DbUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/api/YoutubeBrowser.Temporary.DbUtility.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "YouTubeBrowser/api/YoutubeBrowser.Temporary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/api/YoutubeBrowser.Temporary.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "YouTubeBrowser/api/YoutubeBrowser.Utility.Messages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/api/YoutubeBrowser.Utility.Messages.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "YouTubeBrowser/api/YoutubeBrowser.Utility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/api/YoutubeBrowser.Utility.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "YouTubeBrowser/api/YoutubeBrowser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/api/YoutubeBrowser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "YouTubeBrowser/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/api/toc.html"
+        },
+        ".json": {
+          "relative_path": "YouTubeBrowser/api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "YouTubeBrowser/bin/Debug/net8.0-windows/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/bin/Debug/net8.0-windows/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "YouTubeBrowser/bin/Debug/net8.0-windows/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/bin/Debug/net8.0-windows/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "YouTubeBrowser/docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "YouTubeBrowser/docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "YouTubeBrowser/docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "YouTubeBrowser/docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "YouTubeBrowser/docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

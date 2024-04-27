@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: YoutubeBrowser.ApiService
+  commentId: N:YoutubeBrowser.ApiService
+  id: YoutubeBrowser.ApiService
+  children:
+  - YoutubeBrowser.ApiService.IYoutubeApi
+  - YoutubeBrowser.ApiService.YoutubeApiService
+  langs:
+  - csharp
+  - vb
+  name: YoutubeBrowser.ApiService
+  nameWithType: YoutubeBrowser.ApiService
+  fullName: YoutubeBrowser.ApiService
+  type: Namespace
+  assemblies:
+  - YoutubeBrowser
+references:
+- uid: YoutubeBrowser.ApiService.IYoutubeApi
+  commentId: T:YoutubeBrowser.ApiService.IYoutubeApi
+  parent: YoutubeBrowser.ApiService
+  href: YoutubeBrowser.ApiService.IYoutubeApi.html
+  name: IYoutubeApi
+  nameWithType: IYoutubeApi
+  fullName: YoutubeBrowser.ApiService.IYoutubeApi
+- uid: YoutubeBrowser.ApiService.YoutubeApiService
+  commentId: T:YoutubeBrowser.ApiService.YoutubeApiService
+  href: YoutubeBrowser.ApiService.YoutubeApiService.html
+  name: YoutubeApiService
+  nameWithType: YoutubeApiService
+  fullName: YoutubeBrowser.ApiService.YoutubeApiService
+- uid: YoutubeBrowser.ApiService
+  commentId: N:YoutubeBrowser.ApiService
+  href: YoutubeBrowser.html
+  name: YoutubeBrowser.ApiService
+  nameWithType: YoutubeBrowser.ApiService
+  fullName: YoutubeBrowser.ApiService
+  spec.csharp:
+  - uid: YoutubeBrowser
+    name: YoutubeBrowser
+    href: YoutubeBrowser.html
+  - name: .
+  - uid: YoutubeBrowser.ApiService
+    name: ApiService
+    href: YoutubeBrowser.ApiService.html
+  spec.vb:
+  - uid: YoutubeBrowser
+    name: YoutubeBrowser
+    href: YoutubeBrowser.html
+  - name: .
+  - uid: YoutubeBrowser.ApiService
+    name: ApiService
+    href: YoutubeBrowser.ApiService.html

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: YoutubeBrowser.Migrations
+  commentId: N:YoutubeBrowser.Migrations
+  id: YoutubeBrowser.Migrations
+  children:
+  - YoutubeBrowser.Migrations.initial
+  langs:
+  - csharp
+  - vb
+  name: YoutubeBrowser.Migrations
+  nameWithType: YoutubeBrowser.Migrations
+  fullName: YoutubeBrowser.Migrations
+  type: Namespace
+  assemblies:
+  - YoutubeBrowser
+references:
+- uid: YoutubeBrowser.Migrations.initial
+  commentId: T:YoutubeBrowser.Migrations.initial
+  href: YoutubeBrowser.Migrations.initial.html
+  name: initial
+  nameWithType: initial
+  fullName: YoutubeBrowser.Migrations.initial

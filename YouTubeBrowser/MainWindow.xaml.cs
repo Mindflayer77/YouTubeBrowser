@@ -16,6 +16,9 @@ using YoutubeBrowser.Models;
 using YoutubeBrowser.Temporary;
 using YoutubeBrowser.Utility;
 
+
+
+
 namespace YoutubeBrowser
 {
     /// <summary>
@@ -187,6 +190,8 @@ namespace YoutubeBrowser
             Update_Playlist_Videos();
         }
 
+       
+
         private void Remove_video_from_displayed_playlist(string videoId)
         {
             MessageBoxResult result = MessageBox.Show($"Are you sure you want to delete the video ?", "Confirm deletion", MessageBoxButton.YesNo, MessageBoxImage.Question);
@@ -306,37 +311,42 @@ namespace YoutubeBrowser
             
             string playlist_name = ((Button)sender).Content.ToString();
 
-            MessageBoxResult result = MessageBox.Show($"Are you sure you want to delete the playlist '{playlist_name}'?", "Confirm deletion", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
-            if (result == MessageBoxResult.Yes)
+            MessageBoxResult result1 = MessageBox.Show($"Do you want to delete the playlist '{playlist_name}'?", "Delete playlist", MessageBoxButton.OKCancel, MessageBoxImage.Question);
+            if (result1 == MessageBoxResult.OK)
             {
-                
-                using (var context = factory.CreateDbContext([]))
+                MessageBoxResult result = MessageBox.Show($"Are you sure you want to delete the playlist '{playlist_name}'?", "Confirm deletion", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+                if (result == MessageBoxResult.Yes)
                 {
-                    //playlist to delete
-                    var playlist = context.Playlists.FirstOrDefault(p => p.Name == playlist_name);
-                    
-                    if (playlist != null)
+
+                    using (var context = factory.CreateDbContext([]))
                     {
-                        //columns with PlaylistId for removing
-                        var relatedRecordsfromPlaylist = context.PlaylistsVideos.Where(x => x.PlaylistId == playlist.Id);
+                        //playlist to delete
+                        var playlist = context.Playlists.FirstOrDefault(p => p.Name == playlist_name);
 
-                        //removing data from DB Playlist and PlaylistVideo
-                        context.PlaylistsVideos.RemoveRange(relatedRecordsfromPlaylist);  //removing records                                           
-                        context.Playlists.Remove(playlist);
-                       
-                        context.SaveChanges();
-
-                        if(displayed_playlist != null)
+                        if (playlist != null)
                         {
-                            if(playlist.Name == displayed_playlist.Name)
-                            {
-                                DestroyImages();
-                                displayed_playlist = null;
-                            }
+                            //columns with PlaylistId for removing
+                            var relatedRecordsfromPlaylist = context.PlaylistsVideos.Where(x => x.PlaylistId == playlist.Id);
 
+                            //removing data from DB Playlist and PlaylistVideo
+                            context.PlaylistsVideos.RemoveRange(relatedRecordsfromPlaylist);  //removing records                                           
+                            context.Playlists.Remove(playlist);
+
+                            context.SaveChanges();
+
+                            if (displayed_playlist != null)
+                            {
+                                if (playlist.Name == displayed_playlist.Name)
+                                {
+                                    DestroyImages();
+                                    displayed_playlist = null;
+                                }
+
+                            }
+                            UpdatePlaylistView();
                         }
-                        UpdatePlaylistView();
                     }
                 }
             }

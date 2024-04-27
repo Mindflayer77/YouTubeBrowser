@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>YoutubeBrowser</name>
+    </assembly>
+    <members>
+        <member name="T:YoutubeBrowser.AddVideoWindow">
+            <summary>
+            AddVideoWindow
+            </summary>
+        </member>
+        <member name="M:YoutubeBrowser.AddVideoWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:YoutubeBrowser.ApiService.IYoutubeApi">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:YoutubeBrowser.ApiService.IYoutubeApi.GetVideos(System.String,System.Int32)">
+            <summary>
+            Function return videos from Api search
+            </summary>
+            <param name="search"></param>
+            <param name="video_n"></param>
+            <returns></returns>
+        </member>
+        <member name="T:YoutubeBrowser.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:YoutubeBrowser.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:YoutubeBrowser.DeleteVideoWindow">
+            <summary>
+            DeleteVideoWindow
+            </summary>
+        </member>
+        <member name="M:YoutubeBrowser.DeleteVideoWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:YoutubeBrowser.MainWindow">
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:YoutubeBrowser.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:YoutubeBrowser.Migrations.initial">
+            <inheritdoc />
+        </member>
+        <member name="M:YoutubeBrowser.Migrations.initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:YoutubeBrowser.Migrations.initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:YoutubeBrowser.Migrations.initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
