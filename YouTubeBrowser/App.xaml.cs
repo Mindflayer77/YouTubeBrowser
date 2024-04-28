@@ -29,8 +29,7 @@ namespace YoutubeBrowser
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            DbContextOptions options = new DbContextOptionsBuilder().UseSqlite(CONNECTION_STRING).Options;
-            YoutubeBrowserContext context  = new YoutubeBrowserContext(options);
+            YoutubeBrowserContext context  = new YoutubeBrowserContext();
             context.Database.Migrate();
               
             MainWindow = new MainWindow();
