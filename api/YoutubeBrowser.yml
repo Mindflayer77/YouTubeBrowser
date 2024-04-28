@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: YoutubeBrowser
+  commentId: N:YoutubeBrowser
+  id: YoutubeBrowser
+  children:
+  - YoutubeBrowser.AddVideoWindow
+  - YoutubeBrowser.App
+  - YoutubeBrowser.MainWindow
+  langs:
+  - csharp
+  - vb
+  name: YoutubeBrowser
+  nameWithType: YoutubeBrowser
+  fullName: YoutubeBrowser
+  type: Namespace
+  assemblies:
+  - YoutubeBrowser
+references:
+- uid: YoutubeBrowser.AddVideoWindow
+  commentId: T:YoutubeBrowser.AddVideoWindow
+  href: YoutubeBrowser.AddVideoWindow.html
+  name: AddVideoWindow
+  nameWithType: AddVideoWindow
+  fullName: YoutubeBrowser.AddVideoWindow
+- uid: YoutubeBrowser.App
+  commentId: T:YoutubeBrowser.App
+  href: YoutubeBrowser.App.html
+  name: App
+  nameWithType: App
+  fullName: YoutubeBrowser.App
+- uid: YoutubeBrowser.MainWindow
+  commentId: T:YoutubeBrowser.MainWindow
+  href: YoutubeBrowser.MainWindow.html
+  name: MainWindow
+  nameWithType: MainWindow
+  fullName: YoutubeBrowser.MainWindow

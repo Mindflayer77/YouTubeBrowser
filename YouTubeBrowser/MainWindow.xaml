@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:YoutubeBrowser"
         xmlns:cef="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="YoutubeBrowser" Height="450" Width="800">
 
     <Grid Name="pnlMainGrid" Background="LightBlue">
         <Grid.RowDefinitions>
@@ -17,10 +17,8 @@
         </Grid.RowDefinitions>
 
         <Menu Grid.Row="0" >
-            <MenuItem Header="Exit"  >
+            <MenuItem Header="Edit"  >
                 <MenuItem Header="Clear Playlists" Click="Clear_Playlists_Click"></MenuItem>
-                <Separator></Separator>
-                <MenuItem Header="Exit"></MenuItem>
             </MenuItem>
         </Menu>
         <Grid Grid.Row="1">
@@ -28,12 +26,10 @@
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="45"></ColumnDefinition>
                 <ColumnDefinition Width="45"></ColumnDefinition>
-                <ColumnDefinition Width="45"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <TextBox x:Name="textBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Button x:Name="Add" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="Add_Click" Content="Add" />
             <Button x:Name="Search_Button" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="Click_Search"  Content="Search"/>
-            <Button x:Name="Delete" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="Click_Delete"  Content="Delete"/>
         </Grid>
         <Grid x:Name="Central_Grid" Grid.Row="2">
             <Grid.ColumnDefinitions>

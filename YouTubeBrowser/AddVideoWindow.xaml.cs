@@ -18,13 +18,29 @@ using YoutubeBrowser.Utility;
 
 namespace YoutubeBrowser
 {
-
+    /// <summary>
+    /// Class which handles the functionality connected to addition of new playlists and addition of videos to the playlists.
+    /// </summary>
     public partial class AddVideoWindow : Window
     {
-        private readonly YoutubeBrowserDbContextFactory factory;
-        private List<Button> buttons = [];
-        private Video video;
+        /// <summary>
+        /// Database context factory.
+        /// </summary>
+        public readonly YoutubeBrowserDbContextFactory factory;
+        /// <summary>
+        /// List of dynamically created buttons. Each one of the button represents a different playlist.
+        /// </summary>
+        public List<Button> buttons = [];
+        /// <summary>
+        /// Video which the user wants to add to a certain playlist.
+        /// </summary>
+        public Video video;
 
+        /// <summary>
+        /// Constructor which initializes the necessary elements of the window.
+        /// It creates an instance of YoutubeBrowserContextFactory and displays all stored playlists from the database.
+        /// </summary>
+        /// <param name="p_video">Video which will be added to playlists</param>
         public AddVideoWindow(Video p_video)
         {
             InitializeComponent();
@@ -33,9 +49,13 @@ namespace YoutubeBrowser
             video = p_video;
         }
 
-        
-        //Funckja do wstawiania filmów do bazy danych
-        private void Button_Click(object sender, RoutedEventArgs e)
+
+        /// <summary>
+        /// Adds the associated video to the selected playlist in the database.
+        /// </summary>
+        /// <param name="sender">The object that raised the event, which is expected to be a Button.</param>
+        /// <param name="e">The event arguments for the click event.</param>
+        public void Button_Click(object sender, RoutedEventArgs e)
         {
             
             string playlist_name = ((Button)sender).Content.ToString();
@@ -60,12 +80,15 @@ namespace YoutubeBrowser
                     VideoId = video.Id
                 });
 
-                //var lastAddedVideoTitle = playlist.Videos.LastOrDefault()?.Title;
                 Messages.showMessageBox("Video added to the playlist.", "Success", MessageBoxButton.OK);
             }
         }
-        
-        private void Create_Button(string name)
+
+        /// <summary>
+        /// Dynamically creates a button for each existing playlist.
+        /// </summary>
+        /// <param name="name">The name for the playlist passed by the textbox for creating new button</param>
+        public void Create_Button(string name)
         {
             int column = 0;
             double textBoxWidth = playlist_textbox.Width;
@@ -86,7 +109,10 @@ namespace YoutubeBrowser
             buttons.Add(newButton);
         }
 
-        private void Display_Playlists()
+        /// <summary>
+        /// Retrieves existing playlists from the database and creates buttons for each playlist.
+        /// </summary>
+        public void Display_Playlists()
         {
             List<Playlist> playlists;
             using (var dbContext = factory.CreateDbContext([]))
@@ -100,10 +126,12 @@ namespace YoutubeBrowser
             }
         }
 
-
-        
-        
-        private void Create_Playlist_Click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// Creates a new playlist based on the name provided by the user and adds it to the database.
+        /// </summary>
+        /// <param name="sender">The object that raises the event.</param>
+        /// <param name="e">The event arguments.</param>
+        public void Create_Playlist_Click(object sender, RoutedEventArgs e)
         {
             string name_of_new_playlist = playlist_textbox.Text;
             playlist_textbox.Text = "";

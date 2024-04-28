@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="AddVideoWindow" Height="500" Width="300">
+        Title="Add Video" Height="500" Width="300">
     <ScrollViewer>
         <Grid Name="pnlMainGrid" Background="LightBlue" >
 

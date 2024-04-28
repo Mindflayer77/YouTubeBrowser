@@ -13,7 +13,6 @@ using Microsoft.EntityFrameworkCore;
 using YoutubeBrowser.ApiService;
 using YoutubeBrowser.DbContexts;
 using YoutubeBrowser.Models;
-using YoutubeBrowser.Temporary;
 using YoutubeBrowser.Utility;
 
 
@@ -22,20 +21,47 @@ using YoutubeBrowser.Utility;
 namespace YoutubeBrowser
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// The main window of the application.
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly IYoutubeApi apiService;
-        private Dictionary<string, Video> videos = [];
-        private Video? displayed_video = null;
-        private readonly YoutubeBrowserDbContextFactory factory;
-        private bool playlistsDisplayed = false;
-        private Playlist? displayed_playlist = null;
-        private ScrollViewer scrollViewer;
+        /// <summary>
+        /// YouTube API service used for fetching videos
+        /// </summary>
+        public readonly IYoutubeApi apiService;
+        /// <summary>
+        /// Currently listed videos
+        /// </summary>
+        public Dictionary<string, Video> videos = [];
+        /// <summary>
+        /// Currently displayed video
+        /// </summary>
+        public Video? displayed_video = null;
+        /// <summary>
+        /// Database context factory instance for easy access to the database
+        /// </summary>
+        public readonly YoutubeBrowserDbContextFactory factory;
+        /// <summary>
+        /// Determines if the stored playlists are currently displayed
+        /// </summary>
+        public bool playlistsDisplayed = false;
+        /// <summary>
+        /// Stores the information about currently displayed playlist
+        /// </summary>
+        public Playlist? displayed_playlist = null;
+        /// <summary>
+        /// ScrollViewer used for displaying playlists.
+        /// </summary>
+        public ScrollViewer scrollViewer;
 
+        /// <summary>
+        /// Last searched query
+        /// </summary>
         public string search_text = "";
 
+        /// <summary>
+        /// Initializes a new instance of the MainWindow class
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -44,17 +70,36 @@ namespace YoutubeBrowser
             videos = [];
         }
 
-        private void Clear_Videos_Click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// Utility function to remove all playlists from database.
+        /// </summary>
+        /// <param name="sender">The object that raises the event.</param>
+        /// <param name="e">The event arguments.</param>
+        public void Clear_Playlists_Click(object sender, RoutedEventArgs e)
         {
-            DbUtility.ClearVideos();
+            using (var context = factory.CreateDbContext([]))
+            {
+                foreach (var item in context.Playlists)
+                {
+                    context.Playlists.Remove(item);
+                }
+                context.SaveChanges();
+                displayed_playlist = null;
+            }
+            if (playlistsDisplayed)
+            {
+                UpdatePlaylistView();
+                DestroyImages();
+            }
         }
 
-        private void Clear_Playlists_Click(object sender, RoutedEventArgs e)
-        {
-            DbUtility.ClearPlaylists();
-        }
-
-        private async void Click_Search(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// Search for videos based on the provided search query.
+        /// Function is invoked after user clicks on the Search button.
+        /// </summary>
+        /// <param name="sender">The object that raises the event.</param>
+        /// <param name="e">The event arguments.</param>
+        public async void Click_Search(object sender, RoutedEventArgs e)
         {
             Browser_Test.Visibility = Visibility.Visible;
             search_text = textBox.Text;
@@ -86,12 +131,23 @@ namespace YoutubeBrowser
             displayed_playlist = null;
         }
 
-        private static string GetEmbedAddress(string youtube_Id)
+        /// <summary>
+        /// Retrieves the embed address for a YouTube video based on its ID.
+        /// </summary>
+        /// <param name="youtube_Id">The ID of the YouTube video.</param>
+        /// <returns>The embed address for the YouTube video.</returns>
+        public static string GetEmbedAddress(string youtube_Id)
         {
             return "https://www.youtube.com/embed/" + youtube_Id;
         }
 
-        private void Add_Click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// For adding the currently displayed video to a playlist. After clicking, the AddVideoWindow is opening.
+        /// Method is invoked after the user clicks on the Add button.
+        /// </summary>
+        /// <param name="sender">The object that raises the event.</param>
+        /// <param name="e">The event arguments.</param>
+        public void Add_Click(object sender, RoutedEventArgs e)
         {
             if (displayed_video == null)
             {
@@ -107,28 +163,20 @@ namespace YoutubeBrowser
             }
         }
 
-        private void Click_Delete(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// Updates the list of videos in the displayed playlist.
+        /// The method is invoked when the user clicks on a button representing different Playlist.
+        /// It is also invoked when there was a video added to or deleted from a playlist.
+        /// </summary>
+        public void Update_Playlist_Videos()
         {
-            if (displayed_video == null)
-            {
-                Messages.showMessageBox("No videos are currently displayed", "Cannot delete video", MessageBoxButton.OK);
-                return;
-            }
-            var window = new DeleteVideoWindow(displayed_video);
-            window.Show();
-            Update_Playlist_Videos();
-        }
-
-        private void Update_Playlist_Videos()
-        {
-            videos.Clear();
             using (var context = factory.CreateDbContext([]))
             {
                 if (displayed_playlist == null)
                 {
                     return;
                 }
-
+                videos.Clear();
                 DestroyImages();
                 var playlist = context.Playlists.Where(p => p.Name == displayed_playlist.Name).Include(p => p.Videos).First();
                 foreach (var video in playlist.Videos.ToList())
@@ -140,22 +188,33 @@ namespace YoutubeBrowser
             DisplayImages();
         }
 
-        private void UpdatePlaylistView()
+        /// <summary>
+        /// Updates the displayed playlists.
+        /// </summary>
+        public void UpdatePlaylistView()
         {
             RemovePlaylistScrollViewer();
             Create_Playlist_ScrollViewer();
         }
 
-
-
-        private void Image_Click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// A handler for an event which occurs when the user clicks on an image representing a video.
+        /// This method retrieves the youtube id from the sender and displayes the desired video in the main frame.
+        /// </summary>
+        /// <param name="sender">The object that raises the event.</param>
+        /// <param name="e">The event arguments.</param>
+        public void Image_Click(object sender, RoutedEventArgs e)
         {
             string video_id = ((Image)sender).Tag.ToString();
             Browser_Test.Address = GetEmbedAddress(video_id);
             displayed_video = findVideo(video_id);
         }
 
-        private void DisplayImages()
+        /// <summary>
+        /// Displays images representing fetched videos.
+        /// This method dynamically creates objects for every video and binds appropriate events to them.
+        /// </summary>
+        public void DisplayImages()
         {
             foreach (KeyValuePair<string, Video> video in videos)
             {
@@ -175,12 +234,21 @@ namespace YoutubeBrowser
             }
         }
 
-        private void DestroyImages()
+        /// <summary>
+        /// Clears the panel displaying images.
+        /// this method is invoked whenever there was and update to the displayed videos.
+        /// </summary>
+        public void DestroyImages()
         {
             videosPanel.Children.Clear();
         }
 
-        private void Image_RightClick(object sender, MouseButtonEventArgs e)
+        /// <summary>
+        /// Event handler for right-clicking on an image representing a video. Remove video from playlist after right click.
+        /// </summary>
+        /// <param name="sender">The object that raises the event.</param>
+        /// <param name="e">The event arguments.</param>
+        public void Image_RightClick(object sender, MouseButtonEventArgs e)
         {
             if (displayed_playlist == null)
                 return;
@@ -190,9 +258,11 @@ namespace YoutubeBrowser
             Update_Playlist_Videos();
         }
 
-       
-
-        private void Remove_video_from_displayed_playlist(string videoId)
+        /// <summary>
+        /// Remove video from a displayed playlist.
+        /// </summary>
+        /// <param name="videoId">Video Id to remove</param>
+        public void Remove_video_from_displayed_playlist(string videoId)
         {
             MessageBoxResult result = MessageBox.Show($"Are you sure you want to delete the video ?", "Confirm deletion", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
@@ -216,8 +286,15 @@ namespace YoutubeBrowser
                 }
             }
         }
-
-        private void YourPlaylists_Click(object sender, RoutedEventArgs e)
+        
+        /// <summary>
+        /// Event handler for clicking on the "Your Playlists" button.
+        /// When this method is invoked for the first time, a ScrollViewer object with all stored playlists is displayed.
+        /// When invoked for the second time, it destroys the ScrollViever, hiding all playlists.
+        /// </summary>
+        /// <param name="sender">The object that raises the event.</param>
+        /// <param name="e">The event arguments.</param>
+        public void YourPlaylists_Click(object sender, RoutedEventArgs e)
         {
             if(playlistsDisplayed)
             {
@@ -228,7 +305,10 @@ namespace YoutubeBrowser
             Create_Playlist_ScrollViewer();
         }
 
-        private async void Create_Playlist_ScrollViewer()
+        /// <summary>
+        /// Creates a ScrollViewer for displaying playlists.
+        /// </summary>
+        public async void Create_Playlist_ScrollViewer()
         {
             ColumnDefinition separatorColumn = new ColumnDefinition();
             separatorColumn.Width = new GridLength(10);
@@ -266,13 +346,23 @@ namespace YoutubeBrowser
             scrollViewer = playlistScrollViewer;
         }
 
-        private void RemovePlaylistScrollViewer()
+        /// <summary>
+        /// Remove  ScrollViewer for displayed playlists
+        /// </summary>
+        public void RemovePlaylistScrollViewer()
         {
             Central_Grid.Children.Remove(scrollViewer);
             Central_Grid.ColumnDefinitions.RemoveRange(Central_Grid.ColumnDefinitions.Count - 2, 2);
         }
 
-        private Button Create_Playlist_Button(string name, GridLength width)
+        /// <summary>
+        /// Creates a button for a playlist.
+        /// This method dynamically creates object for a playlist and binds appropriate events to it.
+        /// </summary>
+        /// <param name="name">The name of the playlist.</param>
+        /// <param name="width">The width of the button.</param>
+        /// <returns>The created button.</returns>
+        public Button Create_Playlist_Button(string name, GridLength width)
         {
             Button newButton = new Button();
             newButton.Content = name;
@@ -286,9 +376,14 @@ namespace YoutubeBrowser
             return newButton;
         }
 
-        private void Playlist_Button_Click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// Event handler for clicking on a playlist button.
+        /// When this method is invoked, all the videos from the playlist are listed in a column.
+        /// </summary>
+        /// <param name="sender">The object that raises the event.</param>
+        /// <param name="e">The event arguments.</param>
+        public void Playlist_Button_Click(object sender, RoutedEventArgs e)
         {
-
             videos.Clear();
             string playlist_name = ((Button)sender).Content.ToString();
             textBox.Text = "";
@@ -306,7 +401,14 @@ namespace YoutubeBrowser
             DisplayImages();
         }
 
-        private void Playlist_Button_PreviewMouseRightButtonDown(object sender, MouseButtonEventArgs e)
+        /// <summary>
+        /// Remove Playlist and PlaylistVideo object after right clicking on a button representing given playlist.
+        /// If the deleted playlist has just been displayed, all the associated videos are also deleted 
+        /// and the column representing videos is cleared.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Playlist_Button_PreviewMouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
             
             string playlist_name = ((Button)sender).Content.ToString();
@@ -352,7 +454,12 @@ namespace YoutubeBrowser
             }
         }
 
-        private Video findVideo(string video_id)
+        /// <summary>
+        /// Finds a video by its ID.
+        /// </summary>
+        /// <param name="video_id">The ID of the video to find.</param>
+        /// <returns>The found video.</returns>
+        public Video findVideo(string video_id)
         {
             return videos[video_id];
         }

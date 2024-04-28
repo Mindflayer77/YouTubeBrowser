@@ -5,10 +5,19 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
+
+
 namespace YoutubeBrowser.Models
 {
+    /// <summary>
+    /// Junction table between Videos and Playlists
+    /// </summary>
     public class PlaylistVideo
     {
+        /// <summary>
+        /// PlaylistVideo ID |
+        /// Primary key
+        /// </summary>
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
@@ -22,7 +31,6 @@ namespace YoutubeBrowser.Models
 
         [ForeignKey("PlaylistId")]
         public virtual Playlist Playlist { get; set; }
-        //public DbPlaylistDbVideo() { }
 
     }
 }

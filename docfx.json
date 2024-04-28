@@ -3,7 +3,7 @@
     {
       "src": [
         {
-          "src": "../C:\\Users\\Arina\\Downloads\\YouTubeBrowser-second_window\\YouTubeBrowser-second_window",
+          "src": "../YoutubeBrowser",
           "files": [
             "**/*.csproj"
           ]
@@ -16,7 +16,7 @@
     "content": [
       {
         "files": [
-          "**/*.{md,yml,xml}"
+          "**/*.{md,yml}"
         ],
         "exclude": [
           "_site/**"
@@ -36,8 +36,8 @@
       "modern"
     ],
     "globalMetadata": {
-      "_appName": "tr",
-      "_appTitle": "tr",
+      "_appName": "YoutubeBrowser",
+      "_appTitle": "YoutubeBrowser",
       "_enableSearch": true,
       "pdf": true
     }
