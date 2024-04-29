@@ -101,6 +101,11 @@ namespace YoutubeBrowser
         /// <param name="e">The event arguments.</param>
         public async void Click_Search(object sender, RoutedEventArgs e)
         {
+            if (search_text == "")
+            {
+                Messages.showMessageBox("Please enter your search request", "Empty search", MessageBoxButton.OK);
+                return;
+            }
             Browser_Test.Visibility = Visibility.Visible;
             search_text = textBox.Text;
             videos.Clear();
@@ -148,7 +153,7 @@ namespace YoutubeBrowser
         /// <param name="sender">The object that raises the event.</param>
         /// <param name="e">The event arguments.</param>
         public void Add_Click(object sender, RoutedEventArgs e)
-        {
+        {   
             if (displayed_video == null)
             {
                 Messages.showMessageBox("No videos are currently displayed", "Cannot add video", MessageBoxButton.OK);
