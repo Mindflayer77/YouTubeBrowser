@@ -23,8 +23,7 @@ namespace YoutubeBrowser.DbContexts
         /// <returns>Database context of a type YoutubeBrowserContext</returns>
         public YoutubeBrowserContext CreateDbContext(string[] args)
         {
-            DbContextOptions options = new DbContextOptionsBuilder().UseSqlite("Data Source=.\\YoutubeBrowser.db").Options;
-            return new YoutubeBrowserContext(options);
+            return new YoutubeBrowserContext();
         }
     }
 }

@@ -15,15 +15,19 @@ namespace YoutubeBrowser.DbContexts
     /// </summary>
     public class YoutubeBrowserContext : DbContext
     {
+        public string ConnectionString { get; }
         /// <summary>
         ///  Default constructor for database context
         /// </summary>
-        /// <param name="options">Optional parameters for specifying databse properties</param>
-        public YoutubeBrowserContext(DbContextOptions options) : base(options)
+        public YoutubeBrowserContext()
         {
-            
+            ConnectionString = "Data Source=(localdb)\\MSSqlLocalDB;Initial Catalog=YoutubeBrowser;Integrated Security=True";  
         }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(ConnectionString);
+        }
         /// <summary>
         /// Database set of Videos
         /// </summary>
