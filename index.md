@@ -8,4 +8,4 @@ Refer to [Markdown](http://daringfireball.net/projects/markdown/) for how to wri
 
 ## Quick Start Notes:
 
-1. Add images to the *images* folder if the file is referencing an image.
+[Documentation](https://github.com/Mindflayer77/YouTubeBrowser/edit/gh-pages/_site/index.html)
