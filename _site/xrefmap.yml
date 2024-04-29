@@ -3,19 +3,19 @@ sorted: true
 references:
 - uid: YoutubeBrowser
   name: YoutubeBrowser
-  href: api/YoutubeBrowser.html
+  href: doc/YoutubeBrowser.html
   commentId: N:YoutubeBrowser
   fullName: YoutubeBrowser
   nameWithType: YoutubeBrowser
 - uid: YoutubeBrowser.AddVideoWindow
   name: AddVideoWindow
-  href: api/YoutubeBrowser.AddVideoWindow.html
+  href: doc/YoutubeBrowser.AddVideoWindow.html
   commentId: T:YoutubeBrowser.AddVideoWindow
   fullName: YoutubeBrowser.AddVideoWindow
   nameWithType: AddVideoWindow
 - uid: YoutubeBrowser.AddVideoWindow.#ctor(YoutubeBrowser.Models.Video)
   name: AddVideoWindow(Video)
-  href: api/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow__ctor_YoutubeBrowser_Models_Video_
+  href: doc/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow__ctor_YoutubeBrowser_Models_Video_
   commentId: M:YoutubeBrowser.AddVideoWindow.#ctor(YoutubeBrowser.Models.Video)
   name.vb: New(Video)
   fullName: YoutubeBrowser.AddVideoWindow.AddVideoWindow(YoutubeBrowser.Models.Video)
@@ -24,7 +24,7 @@ references:
   nameWithType.vb: AddVideoWindow.New(Video)
 - uid: YoutubeBrowser.AddVideoWindow.#ctor*
   name: AddVideoWindow
-  href: api/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow__ctor_
+  href: doc/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow__ctor_
   commentId: Overload:YoutubeBrowser.AddVideoWindow.#ctor
   isSpec: "True"
   name.vb: New
@@ -34,7 +34,7 @@ references:
   nameWithType.vb: AddVideoWindow.New
 - uid: YoutubeBrowser.AddVideoWindow.Button_Click(System.Object,System.Windows.RoutedEventArgs)
   name: Button_Click(object, RoutedEventArgs)
-  href: api/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow_Button_Click_System_Object_System_Windows_RoutedEventArgs_
+  href: doc/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow_Button_Click_System_Object_System_Windows_RoutedEventArgs_
   commentId: M:YoutubeBrowser.AddVideoWindow.Button_Click(System.Object,System.Windows.RoutedEventArgs)
   name.vb: Button_Click(Object, RoutedEventArgs)
   fullName: YoutubeBrowser.AddVideoWindow.Button_Click(object, System.Windows.RoutedEventArgs)
@@ -43,14 +43,14 @@ references:
   nameWithType.vb: AddVideoWindow.Button_Click(Object, RoutedEventArgs)
 - uid: YoutubeBrowser.AddVideoWindow.Button_Click*
   name: Button_Click
-  href: api/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow_Button_Click_
+  href: doc/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow_Button_Click_
   commentId: Overload:YoutubeBrowser.AddVideoWindow.Button_Click
   isSpec: "True"
   fullName: YoutubeBrowser.AddVideoWindow.Button_Click
   nameWithType: AddVideoWindow.Button_Click
 - uid: YoutubeBrowser.AddVideoWindow.Create_Button(System.String)
   name: Create_Button(string)
-  href: api/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow_Create_Button_System_String_
+  href: doc/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow_Create_Button_System_String_
   commentId: M:YoutubeBrowser.AddVideoWindow.Create_Button(System.String)
   name.vb: Create_Button(String)
   fullName: YoutubeBrowser.AddVideoWindow.Create_Button(string)
@@ -59,14 +59,14 @@ references:
   nameWithType.vb: AddVideoWindow.Create_Button(String)
 - uid: YoutubeBrowser.AddVideoWindow.Create_Button*
   name: Create_Button
-  href: api/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow_Create_Button_
+  href: doc/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow_Create_Button_
   commentId: Overload:YoutubeBrowser.AddVideoWindow.Create_Button
   isSpec: "True"
   fullName: YoutubeBrowser.AddVideoWindow.Create_Button
   nameWithType: AddVideoWindow.Create_Button
 - uid: YoutubeBrowser.AddVideoWindow.Create_Playlist_Click(System.Object,System.Windows.RoutedEventArgs)
   name: Create_Playlist_Click(object, RoutedEventArgs)
-  href: api/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow_Create_Playlist_Click_System_Object_System_Windows_RoutedEventArgs_
+  href: doc/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow_Create_Playlist_Click_System_Object_System_Windows_RoutedEventArgs_
   commentId: M:YoutubeBrowser.AddVideoWindow.Create_Playlist_Click(System.Object,System.Windows.RoutedEventArgs)
   name.vb: Create_Playlist_Click(Object, RoutedEventArgs)
   fullName: YoutubeBrowser.AddVideoWindow.Create_Playlist_Click(object, System.Windows.RoutedEventArgs)
@@ -75,57 +75,57 @@ references:
   nameWithType.vb: AddVideoWindow.Create_Playlist_Click(Object, RoutedEventArgs)
 - uid: YoutubeBrowser.AddVideoWindow.Create_Playlist_Click*
   name: Create_Playlist_Click
-  href: api/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow_Create_Playlist_Click_
+  href: doc/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow_Create_Playlist_Click_
   commentId: Overload:YoutubeBrowser.AddVideoWindow.Create_Playlist_Click
   isSpec: "True"
   fullName: YoutubeBrowser.AddVideoWindow.Create_Playlist_Click
   nameWithType: AddVideoWindow.Create_Playlist_Click
 - uid: YoutubeBrowser.AddVideoWindow.Display_Playlists
   name: Display_Playlists()
-  href: api/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow_Display_Playlists
+  href: doc/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow_Display_Playlists
   commentId: M:YoutubeBrowser.AddVideoWindow.Display_Playlists
   fullName: YoutubeBrowser.AddVideoWindow.Display_Playlists()
   nameWithType: AddVideoWindow.Display_Playlists()
 - uid: YoutubeBrowser.AddVideoWindow.Display_Playlists*
   name: Display_Playlists
-  href: api/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow_Display_Playlists_
+  href: doc/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow_Display_Playlists_
   commentId: Overload:YoutubeBrowser.AddVideoWindow.Display_Playlists
   isSpec: "True"
   fullName: YoutubeBrowser.AddVideoWindow.Display_Playlists
   nameWithType: AddVideoWindow.Display_Playlists
 - uid: YoutubeBrowser.AddVideoWindow.buttons
   name: buttons
-  href: api/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow_buttons
+  href: doc/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow_buttons
   commentId: F:YoutubeBrowser.AddVideoWindow.buttons
   fullName: YoutubeBrowser.AddVideoWindow.buttons
   nameWithType: AddVideoWindow.buttons
 - uid: YoutubeBrowser.AddVideoWindow.factory
   name: factory
-  href: api/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow_factory
+  href: doc/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow_factory
   commentId: F:YoutubeBrowser.AddVideoWindow.factory
   fullName: YoutubeBrowser.AddVideoWindow.factory
   nameWithType: AddVideoWindow.factory
 - uid: YoutubeBrowser.AddVideoWindow.video
   name: video
-  href: api/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow_video
+  href: doc/YoutubeBrowser.AddVideoWindow.html#YoutubeBrowser_AddVideoWindow_video
   commentId: F:YoutubeBrowser.AddVideoWindow.video
   fullName: YoutubeBrowser.AddVideoWindow.video
   nameWithType: AddVideoWindow.video
 - uid: YoutubeBrowser.ApiService
   name: YoutubeBrowser.ApiService
-  href: api/YoutubeBrowser.ApiService.html
+  href: doc/YoutubeBrowser.ApiService.html
   commentId: N:YoutubeBrowser.ApiService
   fullName: YoutubeBrowser.ApiService
   nameWithType: YoutubeBrowser.ApiService
 - uid: YoutubeBrowser.ApiService.IYoutubeApi
   name: IYoutubeApi
-  href: api/YoutubeBrowser.ApiService.IYoutubeApi.html
+  href: doc/YoutubeBrowser.ApiService.IYoutubeApi.html
   commentId: T:YoutubeBrowser.ApiService.IYoutubeApi
   fullName: YoutubeBrowser.ApiService.IYoutubeApi
   nameWithType: IYoutubeApi
 - uid: YoutubeBrowser.ApiService.IYoutubeApi.GetVideos(System.String,System.Int32)
   name: GetVideos(string, int)
-  href: api/YoutubeBrowser.ApiService.IYoutubeApi.html#YoutubeBrowser_ApiService_IYoutubeApi_GetVideos_System_String_System_Int32_
+  href: doc/YoutubeBrowser.ApiService.IYoutubeApi.html#YoutubeBrowser_ApiService_IYoutubeApi_GetVideos_System_String_System_Int32_
   commentId: M:YoutubeBrowser.ApiService.IYoutubeApi.GetVideos(System.String,System.Int32)
   name.vb: GetVideos(String, Integer)
   fullName: YoutubeBrowser.ApiService.IYoutubeApi.GetVideos(string, int)
@@ -134,20 +134,20 @@ references:
   nameWithType.vb: IYoutubeApi.GetVideos(String, Integer)
 - uid: YoutubeBrowser.ApiService.IYoutubeApi.GetVideos*
   name: GetVideos
-  href: api/YoutubeBrowser.ApiService.IYoutubeApi.html#YoutubeBrowser_ApiService_IYoutubeApi_GetVideos_
+  href: doc/YoutubeBrowser.ApiService.IYoutubeApi.html#YoutubeBrowser_ApiService_IYoutubeApi_GetVideos_
   commentId: Overload:YoutubeBrowser.ApiService.IYoutubeApi.GetVideos
   isSpec: "True"
   fullName: YoutubeBrowser.ApiService.IYoutubeApi.GetVideos
   nameWithType: IYoutubeApi.GetVideos
 - uid: YoutubeBrowser.ApiService.YoutubeApiService
   name: YoutubeApiService
-  href: api/YoutubeBrowser.ApiService.YoutubeApiService.html
+  href: doc/YoutubeBrowser.ApiService.YoutubeApiService.html
   commentId: T:YoutubeBrowser.ApiService.YoutubeApiService
   fullName: YoutubeBrowser.ApiService.YoutubeApiService
   nameWithType: YoutubeApiService
 - uid: YoutubeBrowser.ApiService.YoutubeApiService.#ctor
   name: YoutubeApiService()
-  href: api/YoutubeBrowser.ApiService.YoutubeApiService.html#YoutubeBrowser_ApiService_YoutubeApiService__ctor
+  href: doc/YoutubeBrowser.ApiService.YoutubeApiService.html#YoutubeBrowser_ApiService_YoutubeApiService__ctor
   commentId: M:YoutubeBrowser.ApiService.YoutubeApiService.#ctor
   name.vb: New()
   fullName: YoutubeBrowser.ApiService.YoutubeApiService.YoutubeApiService()
@@ -156,7 +156,7 @@ references:
   nameWithType.vb: YoutubeApiService.New()
 - uid: YoutubeBrowser.ApiService.YoutubeApiService.#ctor*
   name: YoutubeApiService
-  href: api/YoutubeBrowser.ApiService.YoutubeApiService.html#YoutubeBrowser_ApiService_YoutubeApiService__ctor_
+  href: doc/YoutubeBrowser.ApiService.YoutubeApiService.html#YoutubeBrowser_ApiService_YoutubeApiService__ctor_
   commentId: Overload:YoutubeBrowser.ApiService.YoutubeApiService.#ctor
   isSpec: "True"
   name.vb: New
@@ -166,7 +166,7 @@ references:
   nameWithType.vb: YoutubeApiService.New
 - uid: YoutubeBrowser.ApiService.YoutubeApiService.GetVideos(System.String,System.Int32)
   name: GetVideos(string, int)
-  href: api/YoutubeBrowser.ApiService.YoutubeApiService.html#YoutubeBrowser_ApiService_YoutubeApiService_GetVideos_System_String_System_Int32_
+  href: doc/YoutubeBrowser.ApiService.YoutubeApiService.html#YoutubeBrowser_ApiService_YoutubeApiService_GetVideos_System_String_System_Int32_
   commentId: M:YoutubeBrowser.ApiService.YoutubeApiService.GetVideos(System.String,System.Int32)
   name.vb: GetVideos(String, Integer)
   fullName: YoutubeBrowser.ApiService.YoutubeApiService.GetVideos(string, int)
@@ -175,39 +175,39 @@ references:
   nameWithType.vb: YoutubeApiService.GetVideos(String, Integer)
 - uid: YoutubeBrowser.ApiService.YoutubeApiService.GetVideos*
   name: GetVideos
-  href: api/YoutubeBrowser.ApiService.YoutubeApiService.html#YoutubeBrowser_ApiService_YoutubeApiService_GetVideos_
+  href: doc/YoutubeBrowser.ApiService.YoutubeApiService.html#YoutubeBrowser_ApiService_YoutubeApiService_GetVideos_
   commentId: Overload:YoutubeBrowser.ApiService.YoutubeApiService.GetVideos
   isSpec: "True"
   fullName: YoutubeBrowser.ApiService.YoutubeApiService.GetVideos
   nameWithType: YoutubeApiService.GetVideos
 - uid: YoutubeBrowser.ApiService.YoutubeApiService.ParseVideo(Google.Apis.YouTube.v3.Data.SearchResult)
   name: ParseVideo(SearchResult)
-  href: api/YoutubeBrowser.ApiService.YoutubeApiService.html#YoutubeBrowser_ApiService_YoutubeApiService_ParseVideo_Google_Apis_YouTube_v3_Data_SearchResult_
+  href: doc/YoutubeBrowser.ApiService.YoutubeApiService.html#YoutubeBrowser_ApiService_YoutubeApiService_ParseVideo_Google_Apis_YouTube_v3_Data_SearchResult_
   commentId: M:YoutubeBrowser.ApiService.YoutubeApiService.ParseVideo(Google.Apis.YouTube.v3.Data.SearchResult)
   fullName: YoutubeBrowser.ApiService.YoutubeApiService.ParseVideo(Google.Apis.YouTube.v3.Data.SearchResult)
   nameWithType: YoutubeApiService.ParseVideo(SearchResult)
 - uid: YoutubeBrowser.ApiService.YoutubeApiService.ParseVideo*
   name: ParseVideo
-  href: api/YoutubeBrowser.ApiService.YoutubeApiService.html#YoutubeBrowser_ApiService_YoutubeApiService_ParseVideo_
+  href: doc/YoutubeBrowser.ApiService.YoutubeApiService.html#YoutubeBrowser_ApiService_YoutubeApiService_ParseVideo_
   commentId: Overload:YoutubeBrowser.ApiService.YoutubeApiService.ParseVideo
   isSpec: "True"
   fullName: YoutubeBrowser.ApiService.YoutubeApiService.ParseVideo
   nameWithType: YoutubeApiService.ParseVideo
 - uid: YoutubeBrowser.ApiService.YoutubeApiService.service
   name: service
-  href: api/YoutubeBrowser.ApiService.YoutubeApiService.html#YoutubeBrowser_ApiService_YoutubeApiService_service
+  href: doc/YoutubeBrowser.ApiService.YoutubeApiService.html#YoutubeBrowser_ApiService_YoutubeApiService_service
   commentId: F:YoutubeBrowser.ApiService.YoutubeApiService.service
   fullName: YoutubeBrowser.ApiService.YoutubeApiService.service
   nameWithType: YoutubeApiService.service
 - uid: YoutubeBrowser.App
   name: App
-  href: api/YoutubeBrowser.App.html
+  href: doc/YoutubeBrowser.App.html
   commentId: T:YoutubeBrowser.App
   fullName: YoutubeBrowser.App
   nameWithType: App
 - uid: YoutubeBrowser.App.#ctor
   name: App()
-  href: api/YoutubeBrowser.App.html#YoutubeBrowser_App__ctor
+  href: doc/YoutubeBrowser.App.html#YoutubeBrowser_App__ctor
   commentId: M:YoutubeBrowser.App.#ctor
   name.vb: New()
   fullName: YoutubeBrowser.App.App()
@@ -216,7 +216,7 @@ references:
   nameWithType.vb: App.New()
 - uid: YoutubeBrowser.App.#ctor*
   name: App
-  href: api/YoutubeBrowser.App.html#YoutubeBrowser_App__ctor_
+  href: doc/YoutubeBrowser.App.html#YoutubeBrowser_App__ctor_
   commentId: Overload:YoutubeBrowser.App.#ctor
   isSpec: "True"
   name.vb: New
@@ -226,32 +226,32 @@ references:
   nameWithType.vb: App.New
 - uid: YoutubeBrowser.App.OnStartup(System.Windows.StartupEventArgs)
   name: OnStartup(StartupEventArgs)
-  href: api/YoutubeBrowser.App.html#YoutubeBrowser_App_OnStartup_System_Windows_StartupEventArgs_
+  href: doc/YoutubeBrowser.App.html#YoutubeBrowser_App_OnStartup_System_Windows_StartupEventArgs_
   commentId: M:YoutubeBrowser.App.OnStartup(System.Windows.StartupEventArgs)
   fullName: YoutubeBrowser.App.OnStartup(System.Windows.StartupEventArgs)
   nameWithType: App.OnStartup(StartupEventArgs)
 - uid: YoutubeBrowser.App.OnStartup*
   name: OnStartup
-  href: api/YoutubeBrowser.App.html#YoutubeBrowser_App_OnStartup_
+  href: doc/YoutubeBrowser.App.html#YoutubeBrowser_App_OnStartup_
   commentId: Overload:YoutubeBrowser.App.OnStartup
   isSpec: "True"
   fullName: YoutubeBrowser.App.OnStartup
   nameWithType: App.OnStartup
 - uid: YoutubeBrowser.DbContexts
   name: YoutubeBrowser.DbContexts
-  href: api/YoutubeBrowser.DbContexts.html
+  href: doc/YoutubeBrowser.DbContexts.html
   commentId: N:YoutubeBrowser.DbContexts
   fullName: YoutubeBrowser.DbContexts
   nameWithType: YoutubeBrowser.DbContexts
 - uid: YoutubeBrowser.DbContexts.YoutubeBrowserContext
   name: YoutubeBrowserContext
-  href: api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html
+  href: doc/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html
   commentId: T:YoutubeBrowser.DbContexts.YoutubeBrowserContext
   fullName: YoutubeBrowser.DbContexts.YoutubeBrowserContext
   nameWithType: YoutubeBrowserContext
 - uid: YoutubeBrowser.DbContexts.YoutubeBrowserContext.#ctor
   name: YoutubeBrowserContext()
-  href: api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext__ctor
+  href: doc/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext__ctor
   commentId: M:YoutubeBrowser.DbContexts.YoutubeBrowserContext.#ctor
   name.vb: New()
   fullName: YoutubeBrowser.DbContexts.YoutubeBrowserContext.YoutubeBrowserContext()
@@ -260,7 +260,7 @@ references:
   nameWithType.vb: YoutubeBrowserContext.New()
 - uid: YoutubeBrowser.DbContexts.YoutubeBrowserContext.#ctor*
   name: YoutubeBrowserContext
-  href: api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext__ctor_
+  href: doc/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext__ctor_
   commentId: Overload:YoutubeBrowser.DbContexts.YoutubeBrowserContext.#ctor
   isSpec: "True"
   name.vb: New
@@ -270,78 +270,78 @@ references:
   nameWithType.vb: YoutubeBrowserContext.New
 - uid: YoutubeBrowser.DbContexts.YoutubeBrowserContext.ConnectionString
   name: ConnectionString
-  href: api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_ConnectionString
+  href: doc/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_ConnectionString
   commentId: P:YoutubeBrowser.DbContexts.YoutubeBrowserContext.ConnectionString
   fullName: YoutubeBrowser.DbContexts.YoutubeBrowserContext.ConnectionString
   nameWithType: YoutubeBrowserContext.ConnectionString
 - uid: YoutubeBrowser.DbContexts.YoutubeBrowserContext.ConnectionString*
   name: ConnectionString
-  href: api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_ConnectionString_
+  href: doc/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_ConnectionString_
   commentId: Overload:YoutubeBrowser.DbContexts.YoutubeBrowserContext.ConnectionString
   isSpec: "True"
   fullName: YoutubeBrowser.DbContexts.YoutubeBrowserContext.ConnectionString
   nameWithType: YoutubeBrowserContext.ConnectionString
 - uid: YoutubeBrowser.DbContexts.YoutubeBrowserContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)
   name: OnConfiguring(DbContextOptionsBuilder)
-  href: api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_OnConfiguring_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_
+  href: doc/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_OnConfiguring_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_
   commentId: M:YoutubeBrowser.DbContexts.YoutubeBrowserContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)
   fullName: YoutubeBrowser.DbContexts.YoutubeBrowserContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)
   nameWithType: YoutubeBrowserContext.OnConfiguring(DbContextOptionsBuilder)
 - uid: YoutubeBrowser.DbContexts.YoutubeBrowserContext.OnConfiguring*
   name: OnConfiguring
-  href: api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_OnConfiguring_
+  href: doc/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_OnConfiguring_
   commentId: Overload:YoutubeBrowser.DbContexts.YoutubeBrowserContext.OnConfiguring
   isSpec: "True"
   fullName: YoutubeBrowser.DbContexts.YoutubeBrowserContext.OnConfiguring
   nameWithType: YoutubeBrowserContext.OnConfiguring
 - uid: YoutubeBrowser.DbContexts.YoutubeBrowserContext.Playlists
   name: Playlists
-  href: api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_Playlists
+  href: doc/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_Playlists
   commentId: P:YoutubeBrowser.DbContexts.YoutubeBrowserContext.Playlists
   fullName: YoutubeBrowser.DbContexts.YoutubeBrowserContext.Playlists
   nameWithType: YoutubeBrowserContext.Playlists
 - uid: YoutubeBrowser.DbContexts.YoutubeBrowserContext.Playlists*
   name: Playlists
-  href: api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_Playlists_
+  href: doc/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_Playlists_
   commentId: Overload:YoutubeBrowser.DbContexts.YoutubeBrowserContext.Playlists
   isSpec: "True"
   fullName: YoutubeBrowser.DbContexts.YoutubeBrowserContext.Playlists
   nameWithType: YoutubeBrowserContext.Playlists
 - uid: YoutubeBrowser.DbContexts.YoutubeBrowserContext.PlaylistsVideos
   name: PlaylistsVideos
-  href: api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_PlaylistsVideos
+  href: doc/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_PlaylistsVideos
   commentId: P:YoutubeBrowser.DbContexts.YoutubeBrowserContext.PlaylistsVideos
   fullName: YoutubeBrowser.DbContexts.YoutubeBrowserContext.PlaylistsVideos
   nameWithType: YoutubeBrowserContext.PlaylistsVideos
 - uid: YoutubeBrowser.DbContexts.YoutubeBrowserContext.PlaylistsVideos*
   name: PlaylistsVideos
-  href: api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_PlaylistsVideos_
+  href: doc/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_PlaylistsVideos_
   commentId: Overload:YoutubeBrowser.DbContexts.YoutubeBrowserContext.PlaylistsVideos
   isSpec: "True"
   fullName: YoutubeBrowser.DbContexts.YoutubeBrowserContext.PlaylistsVideos
   nameWithType: YoutubeBrowserContext.PlaylistsVideos
 - uid: YoutubeBrowser.DbContexts.YoutubeBrowserContext.Videos
   name: Videos
-  href: api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_Videos
+  href: doc/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_Videos
   commentId: P:YoutubeBrowser.DbContexts.YoutubeBrowserContext.Videos
   fullName: YoutubeBrowser.DbContexts.YoutubeBrowserContext.Videos
   nameWithType: YoutubeBrowserContext.Videos
 - uid: YoutubeBrowser.DbContexts.YoutubeBrowserContext.Videos*
   name: Videos
-  href: api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_Videos_
+  href: doc/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_Videos_
   commentId: Overload:YoutubeBrowser.DbContexts.YoutubeBrowserContext.Videos
   isSpec: "True"
   fullName: YoutubeBrowser.DbContexts.YoutubeBrowserContext.Videos
   nameWithType: YoutubeBrowserContext.Videos
 - uid: YoutubeBrowser.DbContexts.YoutubeBrowserDbContextFactory
   name: YoutubeBrowserDbContextFactory
-  href: api/YoutubeBrowser.DbContexts.YoutubeBrowserDbContextFactory.html
+  href: doc/YoutubeBrowser.DbContexts.YoutubeBrowserDbContextFactory.html
   commentId: T:YoutubeBrowser.DbContexts.YoutubeBrowserDbContextFactory
   fullName: YoutubeBrowser.DbContexts.YoutubeBrowserDbContextFactory
   nameWithType: YoutubeBrowserDbContextFactory
 - uid: YoutubeBrowser.DbContexts.YoutubeBrowserDbContextFactory.CreateDbContext(System.String[])
   name: CreateDbContext(string[])
-  href: api/YoutubeBrowser.DbContexts.YoutubeBrowserDbContextFactory.html#YoutubeBrowser_DbContexts_YoutubeBrowserDbContextFactory_CreateDbContext_System_String___
+  href: doc/YoutubeBrowser.DbContexts.YoutubeBrowserDbContextFactory.html#YoutubeBrowser_DbContexts_YoutubeBrowserDbContextFactory_CreateDbContext_System_String___
   commentId: M:YoutubeBrowser.DbContexts.YoutubeBrowserDbContextFactory.CreateDbContext(System.String[])
   name.vb: CreateDbContext(String())
   fullName: YoutubeBrowser.DbContexts.YoutubeBrowserDbContextFactory.CreateDbContext(string[])
@@ -350,45 +350,20 @@ references:
   nameWithType.vb: YoutubeBrowserDbContextFactory.CreateDbContext(String())
 - uid: YoutubeBrowser.DbContexts.YoutubeBrowserDbContextFactory.CreateDbContext*
   name: CreateDbContext
-  href: api/YoutubeBrowser.DbContexts.YoutubeBrowserDbContextFactory.html#YoutubeBrowser_DbContexts_YoutubeBrowserDbContextFactory_CreateDbContext_
+  href: doc/YoutubeBrowser.DbContexts.YoutubeBrowserDbContextFactory.html#YoutubeBrowser_DbContexts_YoutubeBrowserDbContextFactory_CreateDbContext_
   commentId: Overload:YoutubeBrowser.DbContexts.YoutubeBrowserDbContextFactory.CreateDbContext
   isSpec: "True"
   fullName: YoutubeBrowser.DbContexts.YoutubeBrowserDbContextFactory.CreateDbContext
   nameWithType: YoutubeBrowserDbContextFactory.CreateDbContext
-- uid: YoutubeBrowser.DeleteVideoWindow
-  name: DeleteVideoWindow
-  href: api/YoutubeBrowser.DeleteVideoWindow.html
-  commentId: T:YoutubeBrowser.DeleteVideoWindow
-  fullName: YoutubeBrowser.DeleteVideoWindow
-  nameWithType: DeleteVideoWindow
-- uid: YoutubeBrowser.DeleteVideoWindow.#ctor(YoutubeBrowser.Models.Video)
-  name: DeleteVideoWindow(Video)
-  href: api/YoutubeBrowser.DeleteVideoWindow.html#YoutubeBrowser_DeleteVideoWindow__ctor_YoutubeBrowser_Models_Video_
-  commentId: M:YoutubeBrowser.DeleteVideoWindow.#ctor(YoutubeBrowser.Models.Video)
-  name.vb: New(Video)
-  fullName: YoutubeBrowser.DeleteVideoWindow.DeleteVideoWindow(YoutubeBrowser.Models.Video)
-  fullName.vb: YoutubeBrowser.DeleteVideoWindow.New(YoutubeBrowser.Models.Video)
-  nameWithType: DeleteVideoWindow.DeleteVideoWindow(Video)
-  nameWithType.vb: DeleteVideoWindow.New(Video)
-- uid: YoutubeBrowser.DeleteVideoWindow.#ctor*
-  name: DeleteVideoWindow
-  href: api/YoutubeBrowser.DeleteVideoWindow.html#YoutubeBrowser_DeleteVideoWindow__ctor_
-  commentId: Overload:YoutubeBrowser.DeleteVideoWindow.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: YoutubeBrowser.DeleteVideoWindow.DeleteVideoWindow
-  fullName.vb: YoutubeBrowser.DeleteVideoWindow.New
-  nameWithType: DeleteVideoWindow.DeleteVideoWindow
-  nameWithType.vb: DeleteVideoWindow.New
 - uid: YoutubeBrowser.MainWindow
   name: MainWindow
-  href: api/YoutubeBrowser.MainWindow.html
+  href: doc/YoutubeBrowser.MainWindow.html
   commentId: T:YoutubeBrowser.MainWindow
   fullName: YoutubeBrowser.MainWindow
   nameWithType: MainWindow
 - uid: YoutubeBrowser.MainWindow.#ctor
   name: MainWindow()
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow__ctor
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow__ctor
   commentId: M:YoutubeBrowser.MainWindow.#ctor
   name.vb: New()
   fullName: YoutubeBrowser.MainWindow.MainWindow()
@@ -397,7 +372,7 @@ references:
   nameWithType.vb: MainWindow.New()
 - uid: YoutubeBrowser.MainWindow.#ctor*
   name: MainWindow
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow__ctor_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow__ctor_
   commentId: Overload:YoutubeBrowser.MainWindow.#ctor
   isSpec: "True"
   name.vb: New
@@ -407,7 +382,7 @@ references:
   nameWithType.vb: MainWindow.New
 - uid: YoutubeBrowser.MainWindow.Add_Click(System.Object,System.Windows.RoutedEventArgs)
   name: Add_Click(object, RoutedEventArgs)
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Add_Click_System_Object_System_Windows_RoutedEventArgs_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Add_Click_System_Object_System_Windows_RoutedEventArgs_
   commentId: M:YoutubeBrowser.MainWindow.Add_Click(System.Object,System.Windows.RoutedEventArgs)
   name.vb: Add_Click(Object, RoutedEventArgs)
   fullName: YoutubeBrowser.MainWindow.Add_Click(object, System.Windows.RoutedEventArgs)
@@ -416,14 +391,14 @@ references:
   nameWithType.vb: MainWindow.Add_Click(Object, RoutedEventArgs)
 - uid: YoutubeBrowser.MainWindow.Add_Click*
   name: Add_Click
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Add_Click_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Add_Click_
   commentId: Overload:YoutubeBrowser.MainWindow.Add_Click
   isSpec: "True"
   fullName: YoutubeBrowser.MainWindow.Add_Click
   nameWithType: MainWindow.Add_Click
 - uid: YoutubeBrowser.MainWindow.Clear_Playlists_Click(System.Object,System.Windows.RoutedEventArgs)
   name: Clear_Playlists_Click(object, RoutedEventArgs)
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Clear_Playlists_Click_System_Object_System_Windows_RoutedEventArgs_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Clear_Playlists_Click_System_Object_System_Windows_RoutedEventArgs_
   commentId: M:YoutubeBrowser.MainWindow.Clear_Playlists_Click(System.Object,System.Windows.RoutedEventArgs)
   name.vb: Clear_Playlists_Click(Object, RoutedEventArgs)
   fullName: YoutubeBrowser.MainWindow.Clear_Playlists_Click(object, System.Windows.RoutedEventArgs)
@@ -432,14 +407,14 @@ references:
   nameWithType.vb: MainWindow.Clear_Playlists_Click(Object, RoutedEventArgs)
 - uid: YoutubeBrowser.MainWindow.Clear_Playlists_Click*
   name: Clear_Playlists_Click
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Clear_Playlists_Click_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Clear_Playlists_Click_
   commentId: Overload:YoutubeBrowser.MainWindow.Clear_Playlists_Click
   isSpec: "True"
   fullName: YoutubeBrowser.MainWindow.Clear_Playlists_Click
   nameWithType: MainWindow.Clear_Playlists_Click
 - uid: YoutubeBrowser.MainWindow.Click_Search(System.Object,System.Windows.RoutedEventArgs)
   name: Click_Search(object, RoutedEventArgs)
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Click_Search_System_Object_System_Windows_RoutedEventArgs_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Click_Search_System_Object_System_Windows_RoutedEventArgs_
   commentId: M:YoutubeBrowser.MainWindow.Click_Search(System.Object,System.Windows.RoutedEventArgs)
   name.vb: Click_Search(Object, RoutedEventArgs)
   fullName: YoutubeBrowser.MainWindow.Click_Search(object, System.Windows.RoutedEventArgs)
@@ -448,14 +423,14 @@ references:
   nameWithType.vb: MainWindow.Click_Search(Object, RoutedEventArgs)
 - uid: YoutubeBrowser.MainWindow.Click_Search*
   name: Click_Search
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Click_Search_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Click_Search_
   commentId: Overload:YoutubeBrowser.MainWindow.Click_Search
   isSpec: "True"
   fullName: YoutubeBrowser.MainWindow.Click_Search
   nameWithType: MainWindow.Click_Search
 - uid: YoutubeBrowser.MainWindow.Create_Playlist_Button(System.String,System.Windows.GridLength)
   name: Create_Playlist_Button(string, GridLength)
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Create_Playlist_Button_System_String_System_Windows_GridLength_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Create_Playlist_Button_System_String_System_Windows_GridLength_
   commentId: M:YoutubeBrowser.MainWindow.Create_Playlist_Button(System.String,System.Windows.GridLength)
   name.vb: Create_Playlist_Button(String, GridLength)
   fullName: YoutubeBrowser.MainWindow.Create_Playlist_Button(string, System.Windows.GridLength)
@@ -464,53 +439,53 @@ references:
   nameWithType.vb: MainWindow.Create_Playlist_Button(String, GridLength)
 - uid: YoutubeBrowser.MainWindow.Create_Playlist_Button*
   name: Create_Playlist_Button
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Create_Playlist_Button_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Create_Playlist_Button_
   commentId: Overload:YoutubeBrowser.MainWindow.Create_Playlist_Button
   isSpec: "True"
   fullName: YoutubeBrowser.MainWindow.Create_Playlist_Button
   nameWithType: MainWindow.Create_Playlist_Button
 - uid: YoutubeBrowser.MainWindow.Create_Playlist_ScrollViewer
   name: Create_Playlist_ScrollViewer()
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Create_Playlist_ScrollViewer
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Create_Playlist_ScrollViewer
   commentId: M:YoutubeBrowser.MainWindow.Create_Playlist_ScrollViewer
   fullName: YoutubeBrowser.MainWindow.Create_Playlist_ScrollViewer()
   nameWithType: MainWindow.Create_Playlist_ScrollViewer()
 - uid: YoutubeBrowser.MainWindow.Create_Playlist_ScrollViewer*
   name: Create_Playlist_ScrollViewer
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Create_Playlist_ScrollViewer_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Create_Playlist_ScrollViewer_
   commentId: Overload:YoutubeBrowser.MainWindow.Create_Playlist_ScrollViewer
   isSpec: "True"
   fullName: YoutubeBrowser.MainWindow.Create_Playlist_ScrollViewer
   nameWithType: MainWindow.Create_Playlist_ScrollViewer
 - uid: YoutubeBrowser.MainWindow.DestroyImages
   name: DestroyImages()
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_DestroyImages
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_DestroyImages
   commentId: M:YoutubeBrowser.MainWindow.DestroyImages
   fullName: YoutubeBrowser.MainWindow.DestroyImages()
   nameWithType: MainWindow.DestroyImages()
 - uid: YoutubeBrowser.MainWindow.DestroyImages*
   name: DestroyImages
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_DestroyImages_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_DestroyImages_
   commentId: Overload:YoutubeBrowser.MainWindow.DestroyImages
   isSpec: "True"
   fullName: YoutubeBrowser.MainWindow.DestroyImages
   nameWithType: MainWindow.DestroyImages
 - uid: YoutubeBrowser.MainWindow.DisplayImages
   name: DisplayImages()
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_DisplayImages
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_DisplayImages
   commentId: M:YoutubeBrowser.MainWindow.DisplayImages
   fullName: YoutubeBrowser.MainWindow.DisplayImages()
   nameWithType: MainWindow.DisplayImages()
 - uid: YoutubeBrowser.MainWindow.DisplayImages*
   name: DisplayImages
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_DisplayImages_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_DisplayImages_
   commentId: Overload:YoutubeBrowser.MainWindow.DisplayImages
   isSpec: "True"
   fullName: YoutubeBrowser.MainWindow.DisplayImages
   nameWithType: MainWindow.DisplayImages
 - uid: YoutubeBrowser.MainWindow.GetEmbedAddress(System.String)
   name: GetEmbedAddress(string)
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_GetEmbedAddress_System_String_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_GetEmbedAddress_System_String_
   commentId: M:YoutubeBrowser.MainWindow.GetEmbedAddress(System.String)
   name.vb: GetEmbedAddress(String)
   fullName: YoutubeBrowser.MainWindow.GetEmbedAddress(string)
@@ -519,14 +494,14 @@ references:
   nameWithType.vb: MainWindow.GetEmbedAddress(String)
 - uid: YoutubeBrowser.MainWindow.GetEmbedAddress*
   name: GetEmbedAddress
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_GetEmbedAddress_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_GetEmbedAddress_
   commentId: Overload:YoutubeBrowser.MainWindow.GetEmbedAddress
   isSpec: "True"
   fullName: YoutubeBrowser.MainWindow.GetEmbedAddress
   nameWithType: MainWindow.GetEmbedAddress
 - uid: YoutubeBrowser.MainWindow.Image_Click(System.Object,System.Windows.RoutedEventArgs)
   name: Image_Click(object, RoutedEventArgs)
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Image_Click_System_Object_System_Windows_RoutedEventArgs_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Image_Click_System_Object_System_Windows_RoutedEventArgs_
   commentId: M:YoutubeBrowser.MainWindow.Image_Click(System.Object,System.Windows.RoutedEventArgs)
   name.vb: Image_Click(Object, RoutedEventArgs)
   fullName: YoutubeBrowser.MainWindow.Image_Click(object, System.Windows.RoutedEventArgs)
@@ -535,14 +510,14 @@ references:
   nameWithType.vb: MainWindow.Image_Click(Object, RoutedEventArgs)
 - uid: YoutubeBrowser.MainWindow.Image_Click*
   name: Image_Click
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Image_Click_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Image_Click_
   commentId: Overload:YoutubeBrowser.MainWindow.Image_Click
   isSpec: "True"
   fullName: YoutubeBrowser.MainWindow.Image_Click
   nameWithType: MainWindow.Image_Click
 - uid: YoutubeBrowser.MainWindow.Image_RightClick(System.Object,System.Windows.Input.MouseButtonEventArgs)
   name: Image_RightClick(object, MouseButtonEventArgs)
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Image_RightClick_System_Object_System_Windows_Input_MouseButtonEventArgs_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Image_RightClick_System_Object_System_Windows_Input_MouseButtonEventArgs_
   commentId: M:YoutubeBrowser.MainWindow.Image_RightClick(System.Object,System.Windows.Input.MouseButtonEventArgs)
   name.vb: Image_RightClick(Object, MouseButtonEventArgs)
   fullName: YoutubeBrowser.MainWindow.Image_RightClick(object, System.Windows.Input.MouseButtonEventArgs)
@@ -551,14 +526,14 @@ references:
   nameWithType.vb: MainWindow.Image_RightClick(Object, MouseButtonEventArgs)
 - uid: YoutubeBrowser.MainWindow.Image_RightClick*
   name: Image_RightClick
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Image_RightClick_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Image_RightClick_
   commentId: Overload:YoutubeBrowser.MainWindow.Image_RightClick
   isSpec: "True"
   fullName: YoutubeBrowser.MainWindow.Image_RightClick
   nameWithType: MainWindow.Image_RightClick
 - uid: YoutubeBrowser.MainWindow.Playlist_Button_Click(System.Object,System.Windows.RoutedEventArgs)
   name: Playlist_Button_Click(object, RoutedEventArgs)
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Playlist_Button_Click_System_Object_System_Windows_RoutedEventArgs_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Playlist_Button_Click_System_Object_System_Windows_RoutedEventArgs_
   commentId: M:YoutubeBrowser.MainWindow.Playlist_Button_Click(System.Object,System.Windows.RoutedEventArgs)
   name.vb: Playlist_Button_Click(Object, RoutedEventArgs)
   fullName: YoutubeBrowser.MainWindow.Playlist_Button_Click(object, System.Windows.RoutedEventArgs)
@@ -567,14 +542,14 @@ references:
   nameWithType.vb: MainWindow.Playlist_Button_Click(Object, RoutedEventArgs)
 - uid: YoutubeBrowser.MainWindow.Playlist_Button_Click*
   name: Playlist_Button_Click
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Playlist_Button_Click_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Playlist_Button_Click_
   commentId: Overload:YoutubeBrowser.MainWindow.Playlist_Button_Click
   isSpec: "True"
   fullName: YoutubeBrowser.MainWindow.Playlist_Button_Click
   nameWithType: MainWindow.Playlist_Button_Click
 - uid: YoutubeBrowser.MainWindow.Playlist_Button_PreviewMouseRightButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)
   name: Playlist_Button_PreviewMouseRightButtonDown(object, MouseButtonEventArgs)
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Playlist_Button_PreviewMouseRightButtonDown_System_Object_System_Windows_Input_MouseButtonEventArgs_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Playlist_Button_PreviewMouseRightButtonDown_System_Object_System_Windows_Input_MouseButtonEventArgs_
   commentId: M:YoutubeBrowser.MainWindow.Playlist_Button_PreviewMouseRightButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)
   name.vb: Playlist_Button_PreviewMouseRightButtonDown(Object, MouseButtonEventArgs)
   fullName: YoutubeBrowser.MainWindow.Playlist_Button_PreviewMouseRightButtonDown(object, System.Windows.Input.MouseButtonEventArgs)
@@ -583,27 +558,27 @@ references:
   nameWithType.vb: MainWindow.Playlist_Button_PreviewMouseRightButtonDown(Object, MouseButtonEventArgs)
 - uid: YoutubeBrowser.MainWindow.Playlist_Button_PreviewMouseRightButtonDown*
   name: Playlist_Button_PreviewMouseRightButtonDown
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Playlist_Button_PreviewMouseRightButtonDown_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Playlist_Button_PreviewMouseRightButtonDown_
   commentId: Overload:YoutubeBrowser.MainWindow.Playlist_Button_PreviewMouseRightButtonDown
   isSpec: "True"
   fullName: YoutubeBrowser.MainWindow.Playlist_Button_PreviewMouseRightButtonDown
   nameWithType: MainWindow.Playlist_Button_PreviewMouseRightButtonDown
 - uid: YoutubeBrowser.MainWindow.RemovePlaylistScrollViewer
   name: RemovePlaylistScrollViewer()
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_RemovePlaylistScrollViewer
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_RemovePlaylistScrollViewer
   commentId: M:YoutubeBrowser.MainWindow.RemovePlaylistScrollViewer
   fullName: YoutubeBrowser.MainWindow.RemovePlaylistScrollViewer()
   nameWithType: MainWindow.RemovePlaylistScrollViewer()
 - uid: YoutubeBrowser.MainWindow.RemovePlaylistScrollViewer*
   name: RemovePlaylistScrollViewer
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_RemovePlaylistScrollViewer_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_RemovePlaylistScrollViewer_
   commentId: Overload:YoutubeBrowser.MainWindow.RemovePlaylistScrollViewer
   isSpec: "True"
   fullName: YoutubeBrowser.MainWindow.RemovePlaylistScrollViewer
   nameWithType: MainWindow.RemovePlaylistScrollViewer
 - uid: YoutubeBrowser.MainWindow.Remove_video_from_displayed_playlist(System.String)
   name: Remove_video_from_displayed_playlist(string)
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Remove_video_from_displayed_playlist_System_String_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Remove_video_from_displayed_playlist_System_String_
   commentId: M:YoutubeBrowser.MainWindow.Remove_video_from_displayed_playlist(System.String)
   name.vb: Remove_video_from_displayed_playlist(String)
   fullName: YoutubeBrowser.MainWindow.Remove_video_from_displayed_playlist(string)
@@ -612,40 +587,40 @@ references:
   nameWithType.vb: MainWindow.Remove_video_from_displayed_playlist(String)
 - uid: YoutubeBrowser.MainWindow.Remove_video_from_displayed_playlist*
   name: Remove_video_from_displayed_playlist
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Remove_video_from_displayed_playlist_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Remove_video_from_displayed_playlist_
   commentId: Overload:YoutubeBrowser.MainWindow.Remove_video_from_displayed_playlist
   isSpec: "True"
   fullName: YoutubeBrowser.MainWindow.Remove_video_from_displayed_playlist
   nameWithType: MainWindow.Remove_video_from_displayed_playlist
 - uid: YoutubeBrowser.MainWindow.UpdatePlaylistView
   name: UpdatePlaylistView()
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_UpdatePlaylistView
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_UpdatePlaylistView
   commentId: M:YoutubeBrowser.MainWindow.UpdatePlaylistView
   fullName: YoutubeBrowser.MainWindow.UpdatePlaylistView()
   nameWithType: MainWindow.UpdatePlaylistView()
 - uid: YoutubeBrowser.MainWindow.UpdatePlaylistView*
   name: UpdatePlaylistView
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_UpdatePlaylistView_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_UpdatePlaylistView_
   commentId: Overload:YoutubeBrowser.MainWindow.UpdatePlaylistView
   isSpec: "True"
   fullName: YoutubeBrowser.MainWindow.UpdatePlaylistView
   nameWithType: MainWindow.UpdatePlaylistView
 - uid: YoutubeBrowser.MainWindow.Update_Playlist_Videos
   name: Update_Playlist_Videos()
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Update_Playlist_Videos
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Update_Playlist_Videos
   commentId: M:YoutubeBrowser.MainWindow.Update_Playlist_Videos
   fullName: YoutubeBrowser.MainWindow.Update_Playlist_Videos()
   nameWithType: MainWindow.Update_Playlist_Videos()
 - uid: YoutubeBrowser.MainWindow.Update_Playlist_Videos*
   name: Update_Playlist_Videos
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Update_Playlist_Videos_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_Update_Playlist_Videos_
   commentId: Overload:YoutubeBrowser.MainWindow.Update_Playlist_Videos
   isSpec: "True"
   fullName: YoutubeBrowser.MainWindow.Update_Playlist_Videos
   nameWithType: MainWindow.Update_Playlist_Videos
 - uid: YoutubeBrowser.MainWindow.YourPlaylists_Click(System.Object,System.Windows.RoutedEventArgs)
   name: YourPlaylists_Click(object, RoutedEventArgs)
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_YourPlaylists_Click_System_Object_System_Windows_RoutedEventArgs_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_YourPlaylists_Click_System_Object_System_Windows_RoutedEventArgs_
   commentId: M:YoutubeBrowser.MainWindow.YourPlaylists_Click(System.Object,System.Windows.RoutedEventArgs)
   name.vb: YourPlaylists_Click(Object, RoutedEventArgs)
   fullName: YoutubeBrowser.MainWindow.YourPlaylists_Click(object, System.Windows.RoutedEventArgs)
@@ -654,38 +629,38 @@ references:
   nameWithType.vb: MainWindow.YourPlaylists_Click(Object, RoutedEventArgs)
 - uid: YoutubeBrowser.MainWindow.YourPlaylists_Click*
   name: YourPlaylists_Click
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_YourPlaylists_Click_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_YourPlaylists_Click_
   commentId: Overload:YoutubeBrowser.MainWindow.YourPlaylists_Click
   isSpec: "True"
   fullName: YoutubeBrowser.MainWindow.YourPlaylists_Click
   nameWithType: MainWindow.YourPlaylists_Click
 - uid: YoutubeBrowser.MainWindow.apiService
   name: apiService
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_apiService
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_apiService
   commentId: F:YoutubeBrowser.MainWindow.apiService
   fullName: YoutubeBrowser.MainWindow.apiService
   nameWithType: MainWindow.apiService
 - uid: YoutubeBrowser.MainWindow.displayed_playlist
   name: displayed_playlist
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_displayed_playlist
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_displayed_playlist
   commentId: F:YoutubeBrowser.MainWindow.displayed_playlist
   fullName: YoutubeBrowser.MainWindow.displayed_playlist
   nameWithType: MainWindow.displayed_playlist
 - uid: YoutubeBrowser.MainWindow.displayed_video
   name: displayed_video
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_displayed_video
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_displayed_video
   commentId: F:YoutubeBrowser.MainWindow.displayed_video
   fullName: YoutubeBrowser.MainWindow.displayed_video
   nameWithType: MainWindow.displayed_video
 - uid: YoutubeBrowser.MainWindow.factory
   name: factory
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_factory
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_factory
   commentId: F:YoutubeBrowser.MainWindow.factory
   fullName: YoutubeBrowser.MainWindow.factory
   nameWithType: MainWindow.factory
 - uid: YoutubeBrowser.MainWindow.findVideo(System.String)
   name: findVideo(string)
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_findVideo_System_String_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_findVideo_System_String_
   commentId: M:YoutubeBrowser.MainWindow.findVideo(System.String)
   name.vb: findVideo(String)
   fullName: YoutubeBrowser.MainWindow.findVideo(string)
@@ -694,409 +669,307 @@ references:
   nameWithType.vb: MainWindow.findVideo(String)
 - uid: YoutubeBrowser.MainWindow.findVideo*
   name: findVideo
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_findVideo_
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_findVideo_
   commentId: Overload:YoutubeBrowser.MainWindow.findVideo
   isSpec: "True"
   fullName: YoutubeBrowser.MainWindow.findVideo
   nameWithType: MainWindow.findVideo
 - uid: YoutubeBrowser.MainWindow.playlistsDisplayed
   name: playlistsDisplayed
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_playlistsDisplayed
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_playlistsDisplayed
   commentId: F:YoutubeBrowser.MainWindow.playlistsDisplayed
   fullName: YoutubeBrowser.MainWindow.playlistsDisplayed
   nameWithType: MainWindow.playlistsDisplayed
 - uid: YoutubeBrowser.MainWindow.scrollViewer
   name: scrollViewer
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_scrollViewer
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_scrollViewer
   commentId: F:YoutubeBrowser.MainWindow.scrollViewer
   fullName: YoutubeBrowser.MainWindow.scrollViewer
   nameWithType: MainWindow.scrollViewer
 - uid: YoutubeBrowser.MainWindow.search_text
   name: search_text
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_search_text
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_search_text
   commentId: F:YoutubeBrowser.MainWindow.search_text
   fullName: YoutubeBrowser.MainWindow.search_text
   nameWithType: MainWindow.search_text
 - uid: YoutubeBrowser.MainWindow.videos
   name: videos
-  href: api/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_videos
+  href: doc/YoutubeBrowser.MainWindow.html#YoutubeBrowser_MainWindow_videos
   commentId: F:YoutubeBrowser.MainWindow.videos
   fullName: YoutubeBrowser.MainWindow.videos
   nameWithType: MainWindow.videos
 - uid: YoutubeBrowser.Migrations
   name: YoutubeBrowser.Migrations
-  href: api/YoutubeBrowser.Migrations.html
+  href: doc/YoutubeBrowser.Migrations.html
   commentId: N:YoutubeBrowser.Migrations
   fullName: YoutubeBrowser.Migrations
   nameWithType: YoutubeBrowser.Migrations
 - uid: YoutubeBrowser.Migrations.InitialCreate
   name: InitialCreate
-  href: api/YoutubeBrowser.Migrations.InitialCreate.html
+  href: doc/YoutubeBrowser.Migrations.InitialCreate.html
   commentId: T:YoutubeBrowser.Migrations.InitialCreate
   fullName: YoutubeBrowser.Migrations.InitialCreate
   nameWithType: InitialCreate
 - uid: YoutubeBrowser.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
   name: BuildTargetModel(ModelBuilder)
-  href: api/YoutubeBrowser.Migrations.InitialCreate.html#YoutubeBrowser_Migrations_InitialCreate_BuildTargetModel_Microsoft_EntityFrameworkCore_ModelBuilder_
+  href: doc/YoutubeBrowser.Migrations.InitialCreate.html#YoutubeBrowser_Migrations_InitialCreate_BuildTargetModel_Microsoft_EntityFrameworkCore_ModelBuilder_
   commentId: M:YoutubeBrowser.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
   fullName: YoutubeBrowser.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
   nameWithType: InitialCreate.BuildTargetModel(ModelBuilder)
 - uid: YoutubeBrowser.Migrations.InitialCreate.BuildTargetModel*
   name: BuildTargetModel
-  href: api/YoutubeBrowser.Migrations.InitialCreate.html#YoutubeBrowser_Migrations_InitialCreate_BuildTargetModel_
+  href: doc/YoutubeBrowser.Migrations.InitialCreate.html#YoutubeBrowser_Migrations_InitialCreate_BuildTargetModel_
   commentId: Overload:YoutubeBrowser.Migrations.InitialCreate.BuildTargetModel
   isSpec: "True"
   fullName: YoutubeBrowser.Migrations.InitialCreate.BuildTargetModel
   nameWithType: InitialCreate.BuildTargetModel
 - uid: YoutubeBrowser.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
   name: Down(MigrationBuilder)
-  href: api/YoutubeBrowser.Migrations.InitialCreate.html#YoutubeBrowser_Migrations_InitialCreate_Down_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
+  href: doc/YoutubeBrowser.Migrations.InitialCreate.html#YoutubeBrowser_Migrations_InitialCreate_Down_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
   commentId: M:YoutubeBrowser.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
   fullName: YoutubeBrowser.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
   nameWithType: InitialCreate.Down(MigrationBuilder)
 - uid: YoutubeBrowser.Migrations.InitialCreate.Down*
   name: Down
-  href: api/YoutubeBrowser.Migrations.InitialCreate.html#YoutubeBrowser_Migrations_InitialCreate_Down_
+  href: doc/YoutubeBrowser.Migrations.InitialCreate.html#YoutubeBrowser_Migrations_InitialCreate_Down_
   commentId: Overload:YoutubeBrowser.Migrations.InitialCreate.Down
   isSpec: "True"
   fullName: YoutubeBrowser.Migrations.InitialCreate.Down
   nameWithType: InitialCreate.Down
 - uid: YoutubeBrowser.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
   name: Up(MigrationBuilder)
-  href: api/YoutubeBrowser.Migrations.InitialCreate.html#YoutubeBrowser_Migrations_InitialCreate_Up_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
+  href: doc/YoutubeBrowser.Migrations.InitialCreate.html#YoutubeBrowser_Migrations_InitialCreate_Up_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
   commentId: M:YoutubeBrowser.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
   fullName: YoutubeBrowser.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
   nameWithType: InitialCreate.Up(MigrationBuilder)
 - uid: YoutubeBrowser.Migrations.InitialCreate.Up*
   name: Up
-  href: api/YoutubeBrowser.Migrations.InitialCreate.html#YoutubeBrowser_Migrations_InitialCreate_Up_
+  href: doc/YoutubeBrowser.Migrations.InitialCreate.html#YoutubeBrowser_Migrations_InitialCreate_Up_
   commentId: Overload:YoutubeBrowser.Migrations.InitialCreate.Up
   isSpec: "True"
   fullName: YoutubeBrowser.Migrations.InitialCreate.Up
   nameWithType: InitialCreate.Up
-- uid: YoutubeBrowser.Migrations.initial
-  name: initial
-  href: api/YoutubeBrowser.Migrations.initial.html
-  commentId: T:YoutubeBrowser.Migrations.initial
-  fullName: YoutubeBrowser.Migrations.initial
-  nameWithType: initial
-- uid: YoutubeBrowser.Migrations.initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  name: BuildTargetModel(ModelBuilder)
-  href: api/YoutubeBrowser.Migrations.initial.html#YoutubeBrowser_Migrations_initial_BuildTargetModel_Microsoft_EntityFrameworkCore_ModelBuilder_
-  commentId: M:YoutubeBrowser.Migrations.initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  fullName: YoutubeBrowser.Migrations.initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  nameWithType: initial.BuildTargetModel(ModelBuilder)
-- uid: YoutubeBrowser.Migrations.initial.BuildTargetModel*
-  name: BuildTargetModel
-  href: api/YoutubeBrowser.Migrations.initial.html#YoutubeBrowser_Migrations_initial_BuildTargetModel_
-  commentId: Overload:YoutubeBrowser.Migrations.initial.BuildTargetModel
-  isSpec: "True"
-  fullName: YoutubeBrowser.Migrations.initial.BuildTargetModel
-  nameWithType: initial.BuildTargetModel
-- uid: YoutubeBrowser.Migrations.initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  name: Down(MigrationBuilder)
-  href: api/YoutubeBrowser.Migrations.initial.html#YoutubeBrowser_Migrations_initial_Down_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
-  commentId: M:YoutubeBrowser.Migrations.initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  fullName: YoutubeBrowser.Migrations.initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  nameWithType: initial.Down(MigrationBuilder)
-- uid: YoutubeBrowser.Migrations.initial.Down*
-  name: Down
-  href: api/YoutubeBrowser.Migrations.initial.html#YoutubeBrowser_Migrations_initial_Down_
-  commentId: Overload:YoutubeBrowser.Migrations.initial.Down
-  isSpec: "True"
-  fullName: YoutubeBrowser.Migrations.initial.Down
-  nameWithType: initial.Down
-- uid: YoutubeBrowser.Migrations.initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  name: Up(MigrationBuilder)
-  href: api/YoutubeBrowser.Migrations.initial.html#YoutubeBrowser_Migrations_initial_Up_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
-  commentId: M:YoutubeBrowser.Migrations.initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  fullName: YoutubeBrowser.Migrations.initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  nameWithType: initial.Up(MigrationBuilder)
-- uid: YoutubeBrowser.Migrations.initial.Up*
-  name: Up
-  href: api/YoutubeBrowser.Migrations.initial.html#YoutubeBrowser_Migrations_initial_Up_
-  commentId: Overload:YoutubeBrowser.Migrations.initial.Up
-  isSpec: "True"
-  fullName: YoutubeBrowser.Migrations.initial.Up
-  nameWithType: initial.Up
 - uid: YoutubeBrowser.Models
   name: YoutubeBrowser.Models
-  href: api/YoutubeBrowser.Models.html
+  href: doc/YoutubeBrowser.Models.html
   commentId: N:YoutubeBrowser.Models
   fullName: YoutubeBrowser.Models
   nameWithType: YoutubeBrowser.Models
 - uid: YoutubeBrowser.Models.Playlist
   name: Playlist
-  href: api/YoutubeBrowser.Models.Playlist.html
+  href: doc/YoutubeBrowser.Models.Playlist.html
   commentId: T:YoutubeBrowser.Models.Playlist
   fullName: YoutubeBrowser.Models.Playlist
   nameWithType: Playlist
 - uid: YoutubeBrowser.Models.Playlist.Description
   name: Description
-  href: api/YoutubeBrowser.Models.Playlist.html#YoutubeBrowser_Models_Playlist_Description
+  href: doc/YoutubeBrowser.Models.Playlist.html#YoutubeBrowser_Models_Playlist_Description
   commentId: P:YoutubeBrowser.Models.Playlist.Description
   fullName: YoutubeBrowser.Models.Playlist.Description
   nameWithType: Playlist.Description
 - uid: YoutubeBrowser.Models.Playlist.Description*
   name: Description
-  href: api/YoutubeBrowser.Models.Playlist.html#YoutubeBrowser_Models_Playlist_Description_
+  href: doc/YoutubeBrowser.Models.Playlist.html#YoutubeBrowser_Models_Playlist_Description_
   commentId: Overload:YoutubeBrowser.Models.Playlist.Description
   isSpec: "True"
   fullName: YoutubeBrowser.Models.Playlist.Description
   nameWithType: Playlist.Description
 - uid: YoutubeBrowser.Models.Playlist.Id
   name: Id
-  href: api/YoutubeBrowser.Models.Playlist.html#YoutubeBrowser_Models_Playlist_Id
+  href: doc/YoutubeBrowser.Models.Playlist.html#YoutubeBrowser_Models_Playlist_Id
   commentId: P:YoutubeBrowser.Models.Playlist.Id
   fullName: YoutubeBrowser.Models.Playlist.Id
   nameWithType: Playlist.Id
 - uid: YoutubeBrowser.Models.Playlist.Id*
   name: Id
-  href: api/YoutubeBrowser.Models.Playlist.html#YoutubeBrowser_Models_Playlist_Id_
+  href: doc/YoutubeBrowser.Models.Playlist.html#YoutubeBrowser_Models_Playlist_Id_
   commentId: Overload:YoutubeBrowser.Models.Playlist.Id
   isSpec: "True"
   fullName: YoutubeBrowser.Models.Playlist.Id
   nameWithType: Playlist.Id
 - uid: YoutubeBrowser.Models.Playlist.Name
   name: Name
-  href: api/YoutubeBrowser.Models.Playlist.html#YoutubeBrowser_Models_Playlist_Name
+  href: doc/YoutubeBrowser.Models.Playlist.html#YoutubeBrowser_Models_Playlist_Name
   commentId: P:YoutubeBrowser.Models.Playlist.Name
   fullName: YoutubeBrowser.Models.Playlist.Name
   nameWithType: Playlist.Name
 - uid: YoutubeBrowser.Models.Playlist.Name*
   name: Name
-  href: api/YoutubeBrowser.Models.Playlist.html#YoutubeBrowser_Models_Playlist_Name_
+  href: doc/YoutubeBrowser.Models.Playlist.html#YoutubeBrowser_Models_Playlist_Name_
   commentId: Overload:YoutubeBrowser.Models.Playlist.Name
   isSpec: "True"
   fullName: YoutubeBrowser.Models.Playlist.Name
   nameWithType: Playlist.Name
 - uid: YoutubeBrowser.Models.Playlist.Videos
   name: Videos
-  href: api/YoutubeBrowser.Models.Playlist.html#YoutubeBrowser_Models_Playlist_Videos
+  href: doc/YoutubeBrowser.Models.Playlist.html#YoutubeBrowser_Models_Playlist_Videos
   commentId: P:YoutubeBrowser.Models.Playlist.Videos
   fullName: YoutubeBrowser.Models.Playlist.Videos
   nameWithType: Playlist.Videos
 - uid: YoutubeBrowser.Models.Playlist.Videos*
   name: Videos
-  href: api/YoutubeBrowser.Models.Playlist.html#YoutubeBrowser_Models_Playlist_Videos_
+  href: doc/YoutubeBrowser.Models.Playlist.html#YoutubeBrowser_Models_Playlist_Videos_
   commentId: Overload:YoutubeBrowser.Models.Playlist.Videos
   isSpec: "True"
   fullName: YoutubeBrowser.Models.Playlist.Videos
   nameWithType: Playlist.Videos
 - uid: YoutubeBrowser.Models.PlaylistVideo
   name: PlaylistVideo
-  href: api/YoutubeBrowser.Models.PlaylistVideo.html
+  href: doc/YoutubeBrowser.Models.PlaylistVideo.html
   commentId: T:YoutubeBrowser.Models.PlaylistVideo
   fullName: YoutubeBrowser.Models.PlaylistVideo
   nameWithType: PlaylistVideo
 - uid: YoutubeBrowser.Models.PlaylistVideo.ID
   name: ID
-  href: api/YoutubeBrowser.Models.PlaylistVideo.html#YoutubeBrowser_Models_PlaylistVideo_ID
+  href: doc/YoutubeBrowser.Models.PlaylistVideo.html#YoutubeBrowser_Models_PlaylistVideo_ID
   commentId: P:YoutubeBrowser.Models.PlaylistVideo.ID
   fullName: YoutubeBrowser.Models.PlaylistVideo.ID
   nameWithType: PlaylistVideo.ID
 - uid: YoutubeBrowser.Models.PlaylistVideo.ID*
   name: ID
-  href: api/YoutubeBrowser.Models.PlaylistVideo.html#YoutubeBrowser_Models_PlaylistVideo_ID_
+  href: doc/YoutubeBrowser.Models.PlaylistVideo.html#YoutubeBrowser_Models_PlaylistVideo_ID_
   commentId: Overload:YoutubeBrowser.Models.PlaylistVideo.ID
   isSpec: "True"
   fullName: YoutubeBrowser.Models.PlaylistVideo.ID
   nameWithType: PlaylistVideo.ID
 - uid: YoutubeBrowser.Models.PlaylistVideo.Playlist
   name: Playlist
-  href: api/YoutubeBrowser.Models.PlaylistVideo.html#YoutubeBrowser_Models_PlaylistVideo_Playlist
+  href: doc/YoutubeBrowser.Models.PlaylistVideo.html#YoutubeBrowser_Models_PlaylistVideo_Playlist
   commentId: P:YoutubeBrowser.Models.PlaylistVideo.Playlist
   fullName: YoutubeBrowser.Models.PlaylistVideo.Playlist
   nameWithType: PlaylistVideo.Playlist
 - uid: YoutubeBrowser.Models.PlaylistVideo.Playlist*
   name: Playlist
-  href: api/YoutubeBrowser.Models.PlaylistVideo.html#YoutubeBrowser_Models_PlaylistVideo_Playlist_
+  href: doc/YoutubeBrowser.Models.PlaylistVideo.html#YoutubeBrowser_Models_PlaylistVideo_Playlist_
   commentId: Overload:YoutubeBrowser.Models.PlaylistVideo.Playlist
   isSpec: "True"
   fullName: YoutubeBrowser.Models.PlaylistVideo.Playlist
   nameWithType: PlaylistVideo.Playlist
 - uid: YoutubeBrowser.Models.PlaylistVideo.PlaylistId
   name: PlaylistId
-  href: api/YoutubeBrowser.Models.PlaylistVideo.html#YoutubeBrowser_Models_PlaylistVideo_PlaylistId
+  href: doc/YoutubeBrowser.Models.PlaylistVideo.html#YoutubeBrowser_Models_PlaylistVideo_PlaylistId
   commentId: P:YoutubeBrowser.Models.PlaylistVideo.PlaylistId
   fullName: YoutubeBrowser.Models.PlaylistVideo.PlaylistId
   nameWithType: PlaylistVideo.PlaylistId
 - uid: YoutubeBrowser.Models.PlaylistVideo.PlaylistId*
   name: PlaylistId
-  href: api/YoutubeBrowser.Models.PlaylistVideo.html#YoutubeBrowser_Models_PlaylistVideo_PlaylistId_
+  href: doc/YoutubeBrowser.Models.PlaylistVideo.html#YoutubeBrowser_Models_PlaylistVideo_PlaylistId_
   commentId: Overload:YoutubeBrowser.Models.PlaylistVideo.PlaylistId
   isSpec: "True"
   fullName: YoutubeBrowser.Models.PlaylistVideo.PlaylistId
   nameWithType: PlaylistVideo.PlaylistId
 - uid: YoutubeBrowser.Models.PlaylistVideo.Video
   name: Video
-  href: api/YoutubeBrowser.Models.PlaylistVideo.html#YoutubeBrowser_Models_PlaylistVideo_Video
+  href: doc/YoutubeBrowser.Models.PlaylistVideo.html#YoutubeBrowser_Models_PlaylistVideo_Video
   commentId: P:YoutubeBrowser.Models.PlaylistVideo.Video
   fullName: YoutubeBrowser.Models.PlaylistVideo.Video
   nameWithType: PlaylistVideo.Video
 - uid: YoutubeBrowser.Models.PlaylistVideo.Video*
   name: Video
-  href: api/YoutubeBrowser.Models.PlaylistVideo.html#YoutubeBrowser_Models_PlaylistVideo_Video_
+  href: doc/YoutubeBrowser.Models.PlaylistVideo.html#YoutubeBrowser_Models_PlaylistVideo_Video_
   commentId: Overload:YoutubeBrowser.Models.PlaylistVideo.Video
   isSpec: "True"
   fullName: YoutubeBrowser.Models.PlaylistVideo.Video
   nameWithType: PlaylistVideo.Video
 - uid: YoutubeBrowser.Models.PlaylistVideo.VideoId
   name: VideoId
-  href: api/YoutubeBrowser.Models.PlaylistVideo.html#YoutubeBrowser_Models_PlaylistVideo_VideoId
+  href: doc/YoutubeBrowser.Models.PlaylistVideo.html#YoutubeBrowser_Models_PlaylistVideo_VideoId
   commentId: P:YoutubeBrowser.Models.PlaylistVideo.VideoId
   fullName: YoutubeBrowser.Models.PlaylistVideo.VideoId
   nameWithType: PlaylistVideo.VideoId
 - uid: YoutubeBrowser.Models.PlaylistVideo.VideoId*
   name: VideoId
-  href: api/YoutubeBrowser.Models.PlaylistVideo.html#YoutubeBrowser_Models_PlaylistVideo_VideoId_
+  href: doc/YoutubeBrowser.Models.PlaylistVideo.html#YoutubeBrowser_Models_PlaylistVideo_VideoId_
   commentId: Overload:YoutubeBrowser.Models.PlaylistVideo.VideoId
   isSpec: "True"
   fullName: YoutubeBrowser.Models.PlaylistVideo.VideoId
   nameWithType: PlaylistVideo.VideoId
 - uid: YoutubeBrowser.Models.Video
   name: Video
-  href: api/YoutubeBrowser.Models.Video.html
+  href: doc/YoutubeBrowser.Models.Video.html
   commentId: T:YoutubeBrowser.Models.Video
   fullName: YoutubeBrowser.Models.Video
   nameWithType: Video
 - uid: YoutubeBrowser.Models.Video.Id
   name: Id
-  href: api/YoutubeBrowser.Models.Video.html#YoutubeBrowser_Models_Video_Id
+  href: doc/YoutubeBrowser.Models.Video.html#YoutubeBrowser_Models_Video_Id
   commentId: P:YoutubeBrowser.Models.Video.Id
   fullName: YoutubeBrowser.Models.Video.Id
   nameWithType: Video.Id
 - uid: YoutubeBrowser.Models.Video.Id*
   name: Id
-  href: api/YoutubeBrowser.Models.Video.html#YoutubeBrowser_Models_Video_Id_
+  href: doc/YoutubeBrowser.Models.Video.html#YoutubeBrowser_Models_Video_Id_
   commentId: Overload:YoutubeBrowser.Models.Video.Id
   isSpec: "True"
   fullName: YoutubeBrowser.Models.Video.Id
   nameWithType: Video.Id
 - uid: YoutubeBrowser.Models.Video.Playlists
   name: Playlists
-  href: api/YoutubeBrowser.Models.Video.html#YoutubeBrowser_Models_Video_Playlists
+  href: doc/YoutubeBrowser.Models.Video.html#YoutubeBrowser_Models_Video_Playlists
   commentId: P:YoutubeBrowser.Models.Video.Playlists
   fullName: YoutubeBrowser.Models.Video.Playlists
   nameWithType: Video.Playlists
 - uid: YoutubeBrowser.Models.Video.Playlists*
   name: Playlists
-  href: api/YoutubeBrowser.Models.Video.html#YoutubeBrowser_Models_Video_Playlists_
+  href: doc/YoutubeBrowser.Models.Video.html#YoutubeBrowser_Models_Video_Playlists_
   commentId: Overload:YoutubeBrowser.Models.Video.Playlists
   isSpec: "True"
   fullName: YoutubeBrowser.Models.Video.Playlists
   nameWithType: Video.Playlists
 - uid: YoutubeBrowser.Models.Video.Thumbnail_url
   name: Thumbnail_url
-  href: api/YoutubeBrowser.Models.Video.html#YoutubeBrowser_Models_Video_Thumbnail_url
+  href: doc/YoutubeBrowser.Models.Video.html#YoutubeBrowser_Models_Video_Thumbnail_url
   commentId: P:YoutubeBrowser.Models.Video.Thumbnail_url
   fullName: YoutubeBrowser.Models.Video.Thumbnail_url
   nameWithType: Video.Thumbnail_url
 - uid: YoutubeBrowser.Models.Video.Thumbnail_url*
   name: Thumbnail_url
-  href: api/YoutubeBrowser.Models.Video.html#YoutubeBrowser_Models_Video_Thumbnail_url_
+  href: doc/YoutubeBrowser.Models.Video.html#YoutubeBrowser_Models_Video_Thumbnail_url_
   commentId: Overload:YoutubeBrowser.Models.Video.Thumbnail_url
   isSpec: "True"
   fullName: YoutubeBrowser.Models.Video.Thumbnail_url
   nameWithType: Video.Thumbnail_url
 - uid: YoutubeBrowser.Models.Video.Title
   name: Title
-  href: api/YoutubeBrowser.Models.Video.html#YoutubeBrowser_Models_Video_Title
+  href: doc/YoutubeBrowser.Models.Video.html#YoutubeBrowser_Models_Video_Title
   commentId: P:YoutubeBrowser.Models.Video.Title
   fullName: YoutubeBrowser.Models.Video.Title
   nameWithType: Video.Title
 - uid: YoutubeBrowser.Models.Video.Title*
   name: Title
-  href: api/YoutubeBrowser.Models.Video.html#YoutubeBrowser_Models_Video_Title_
+  href: doc/YoutubeBrowser.Models.Video.html#YoutubeBrowser_Models_Video_Title_
   commentId: Overload:YoutubeBrowser.Models.Video.Title
   isSpec: "True"
   fullName: YoutubeBrowser.Models.Video.Title
   nameWithType: Video.Title
 - uid: YoutubeBrowser.Models.Video.YoutubeId
   name: YoutubeId
-  href: api/YoutubeBrowser.Models.Video.html#YoutubeBrowser_Models_Video_YoutubeId
+  href: doc/YoutubeBrowser.Models.Video.html#YoutubeBrowser_Models_Video_YoutubeId
   commentId: P:YoutubeBrowser.Models.Video.YoutubeId
   fullName: YoutubeBrowser.Models.Video.YoutubeId
   nameWithType: Video.YoutubeId
 - uid: YoutubeBrowser.Models.Video.YoutubeId*
   name: YoutubeId
-  href: api/YoutubeBrowser.Models.Video.html#YoutubeBrowser_Models_Video_YoutubeId_
+  href: doc/YoutubeBrowser.Models.Video.html#YoutubeBrowser_Models_Video_YoutubeId_
   commentId: Overload:YoutubeBrowser.Models.Video.YoutubeId
   isSpec: "True"
   fullName: YoutubeBrowser.Models.Video.YoutubeId
   nameWithType: Video.YoutubeId
-- uid: YoutubeBrowser.Temporary
-  name: YoutubeBrowser.Temporary
-  href: api/YoutubeBrowser.Temporary.html
-  commentId: N:YoutubeBrowser.Temporary
-  fullName: YoutubeBrowser.Temporary
-  nameWithType: YoutubeBrowser.Temporary
-- uid: YoutubeBrowser.Temporary.DbUtility
-  name: DbUtility
-  href: api/YoutubeBrowser.Temporary.DbUtility.html
-  commentId: T:YoutubeBrowser.Temporary.DbUtility
-  fullName: YoutubeBrowser.Temporary.DbUtility
-  nameWithType: DbUtility
-- uid: YoutubeBrowser.Temporary.DbUtility.#ctor
-  name: DbUtility()
-  href: api/YoutubeBrowser.Temporary.DbUtility.html#YoutubeBrowser_Temporary_DbUtility__ctor
-  commentId: M:YoutubeBrowser.Temporary.DbUtility.#ctor
-  name.vb: New()
-  fullName: YoutubeBrowser.Temporary.DbUtility.DbUtility()
-  fullName.vb: YoutubeBrowser.Temporary.DbUtility.New()
-  nameWithType: DbUtility.DbUtility()
-  nameWithType.vb: DbUtility.New()
-- uid: YoutubeBrowser.Temporary.DbUtility.#ctor*
-  name: DbUtility
-  href: api/YoutubeBrowser.Temporary.DbUtility.html#YoutubeBrowser_Temporary_DbUtility__ctor_
-  commentId: Overload:YoutubeBrowser.Temporary.DbUtility.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: YoutubeBrowser.Temporary.DbUtility.DbUtility
-  fullName.vb: YoutubeBrowser.Temporary.DbUtility.New
-  nameWithType: DbUtility.DbUtility
-  nameWithType.vb: DbUtility.New
-- uid: YoutubeBrowser.Temporary.DbUtility.ClearPlaylists
-  name: ClearPlaylists()
-  href: api/YoutubeBrowser.Temporary.DbUtility.html#YoutubeBrowser_Temporary_DbUtility_ClearPlaylists
-  commentId: M:YoutubeBrowser.Temporary.DbUtility.ClearPlaylists
-  fullName: YoutubeBrowser.Temporary.DbUtility.ClearPlaylists()
-  nameWithType: DbUtility.ClearPlaylists()
-- uid: YoutubeBrowser.Temporary.DbUtility.ClearPlaylists*
-  name: ClearPlaylists
-  href: api/YoutubeBrowser.Temporary.DbUtility.html#YoutubeBrowser_Temporary_DbUtility_ClearPlaylists_
-  commentId: Overload:YoutubeBrowser.Temporary.DbUtility.ClearPlaylists
-  isSpec: "True"
-  fullName: YoutubeBrowser.Temporary.DbUtility.ClearPlaylists
-  nameWithType: DbUtility.ClearPlaylists
-- uid: YoutubeBrowser.Temporary.DbUtility.ClearVideos
-  name: ClearVideos()
-  href: api/YoutubeBrowser.Temporary.DbUtility.html#YoutubeBrowser_Temporary_DbUtility_ClearVideos
-  commentId: M:YoutubeBrowser.Temporary.DbUtility.ClearVideos
-  fullName: YoutubeBrowser.Temporary.DbUtility.ClearVideos()
-  nameWithType: DbUtility.ClearVideos()
-- uid: YoutubeBrowser.Temporary.DbUtility.ClearVideos*
-  name: ClearVideos
-  href: api/YoutubeBrowser.Temporary.DbUtility.html#YoutubeBrowser_Temporary_DbUtility_ClearVideos_
-  commentId: Overload:YoutubeBrowser.Temporary.DbUtility.ClearVideos
-  isSpec: "True"
-  fullName: YoutubeBrowser.Temporary.DbUtility.ClearVideos
-  nameWithType: DbUtility.ClearVideos
 - uid: YoutubeBrowser.Utility
   name: YoutubeBrowser.Utility
-  href: api/YoutubeBrowser.Utility.html
+  href: doc/YoutubeBrowser.Utility.html
   commentId: N:YoutubeBrowser.Utility
   fullName: YoutubeBrowser.Utility
   nameWithType: YoutubeBrowser.Utility
 - uid: YoutubeBrowser.Utility.Messages
   name: Messages
-  href: api/YoutubeBrowser.Utility.Messages.html
+  href: doc/YoutubeBrowser.Utility.Messages.html
   commentId: T:YoutubeBrowser.Utility.Messages
   fullName: YoutubeBrowser.Utility.Messages
   nameWithType: Messages
 - uid: YoutubeBrowser.Utility.Messages.showMessageBox(System.String,System.String,System.Windows.MessageBoxButton)
   name: showMessageBox(string, string, MessageBoxButton)
-  href: api/YoutubeBrowser.Utility.Messages.html#YoutubeBrowser_Utility_Messages_showMessageBox_System_String_System_String_System_Windows_MessageBoxButton_
+  href: doc/YoutubeBrowser.Utility.Messages.html#YoutubeBrowser_Utility_Messages_showMessageBox_System_String_System_String_System_Windows_MessageBoxButton_
   commentId: M:YoutubeBrowser.Utility.Messages.showMessageBox(System.String,System.String,System.Windows.MessageBoxButton)
   name.vb: showMessageBox(String, String, MessageBoxButton)
   fullName: YoutubeBrowser.Utility.Messages.showMessageBox(string, string, System.Windows.MessageBoxButton)
@@ -1105,7 +978,7 @@ references:
   nameWithType.vb: Messages.showMessageBox(String, String, MessageBoxButton)
 - uid: YoutubeBrowser.Utility.Messages.showMessageBox*
   name: showMessageBox
-  href: api/YoutubeBrowser.Utility.Messages.html#YoutubeBrowser_Utility_Messages_showMessageBox_
+  href: doc/YoutubeBrowser.Utility.Messages.html#YoutubeBrowser_Utility_Messages_showMessageBox_
   commentId: Overload:YoutubeBrowser.Utility.Messages.showMessageBox
   isSpec: "True"
   fullName: YoutubeBrowser.Utility.Messages.showMessageBox
