@@ -8,4 +8,4 @@ Refer to [Markdown](http://daringfireball.net/projects/markdown/) for how to wri
 
 ## Quick Start Notes:
 
-[Documentation](https://github.com/Mindflayer77/YouTubeBrowser/edit/gh-pages/_site/index.html)
+[Documentation](./_site/index.html)
