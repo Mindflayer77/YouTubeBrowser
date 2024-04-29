@@ -112,6 +112,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/YoutubeBrowser.Migrations.InitialCreate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/YoutubeBrowser.Migrations.InitialCreate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/YoutubeBrowser.Migrations.initial.yml",
       "output": {
         ".html": {

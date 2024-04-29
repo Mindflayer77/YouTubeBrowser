@@ -19,13 +19,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/Models/Playlist.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Playlist
     path: YouTubeBrowser/Models/Playlist.cs
     startLine: 18
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.Models
   summary: Database model representing Playlist table
   example: []
@@ -56,13 +56,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/Models/Playlist.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Id
     path: YouTubeBrowser/Models/Playlist.cs
     startLine: 25
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.Models
   summary: >-
     Id of the playlist | 
@@ -111,13 +111,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/Models/Playlist.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Name
     path: YouTubeBrowser/Models/Playlist.cs
     startLine: 33
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.Models
   summary: >-
     Name of the playlist | 
@@ -155,13 +155,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/Models/Playlist.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Description
     path: YouTubeBrowser/Models/Playlist.cs
     startLine: 40
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.Models
   summary: >-
     Description of the playlist | 
@@ -189,13 +189,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/Models/Playlist.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Videos
     path: YouTubeBrowser/Models/Playlist.cs
     startLine: 45
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.Models
   summary: Collection of Videos which are included in the playlist
   example: []

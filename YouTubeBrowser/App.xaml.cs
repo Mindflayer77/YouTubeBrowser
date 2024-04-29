@@ -12,11 +12,7 @@ namespace YoutubeBrowser
     /// </summary>
     public partial class App : Application
     {   
-        /// <summary>
-        /// Connection string representing the path to the database.
-        /// </summary>
-        public const string CONNECTION_STRING = "Data Source=.\\YoutubeBrowser.db";
-
+        
         /// <summary>
         /// Initializes a new instance of the App class
         /// </summary>

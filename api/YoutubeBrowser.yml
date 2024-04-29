@@ -15,7 +15,7 @@ items:
   fullName: YoutubeBrowser
   type: Namespace
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
 references:
 - uid: YoutubeBrowser.AddVideoWindow
   commentId: T:YoutubeBrowser.AddVideoWindow

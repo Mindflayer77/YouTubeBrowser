@@ -26,8 +26,8 @@ items:
 - uid: YoutubeBrowser.Migrations
   name: YoutubeBrowser.Migrations
   items:
-  - uid: YoutubeBrowser.Migrations.initial
-    name: initial
+  - uid: YoutubeBrowser.Migrations.InitialCreate
+    name: InitialCreate
 - uid: YoutubeBrowser.Models
   name: YoutubeBrowser.Models
   items:

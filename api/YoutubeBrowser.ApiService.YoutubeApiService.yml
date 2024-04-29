@@ -19,13 +19,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/ApiService/YoutubeApiService.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: YoutubeApiService
     path: YouTubeBrowser/ApiService/YoutubeApiService.cs
     startLine: 20
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.ApiService
   summary: Methods of interacting with the YouTube data API to download videos
   example: []
@@ -58,13 +58,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/ApiService/YoutubeApiService.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: service
     path: YouTubeBrowser/ApiService/YoutubeApiService.cs
     startLine: 25
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.ApiService
   summary: Represents the YouTube service used for API requests.
   example: []
@@ -87,13 +87,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/ApiService/YoutubeApiService.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: .ctor
     path: YouTubeBrowser/ApiService/YoutubeApiService.cs
     startLine: 30
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.ApiService
   summary: Initiates a new instance of the YoutubeApiService class with the default API key and application name.
   example: []
@@ -118,13 +118,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/ApiService/YoutubeApiService.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: ParseVideo
     path: YouTubeBrowser/ApiService/YoutubeApiService.cs
     startLine: 44
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.ApiService
   summary: Parses a SearchResult object into a Video object.
   example: []
@@ -153,13 +153,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/ApiService/YoutubeApiService.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: GetVideos
     path: YouTubeBrowser/ApiService/YoutubeApiService.cs
-    startLine: 61
+    startLine: 60
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.ApiService
   summary: Downloads a list of YouTube videos based on specific search criteria.
   example: []

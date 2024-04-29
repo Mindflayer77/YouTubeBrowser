@@ -6,7 +6,6 @@ items:
   parent: YoutubeBrowser
   children:
   - YoutubeBrowser.App.#ctor
-  - YoutubeBrowser.App.CONNECTION_STRING
   - YoutubeBrowser.App.OnStartup(System.Windows.StartupEventArgs)
   langs:
   - csharp
@@ -18,13 +17,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/App.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: App
     path: YouTubeBrowser/App.xaml.cs
     startLine: 12
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Interaction logic for App.xaml. Represents the entry point for the application.
   example: []
@@ -91,35 +90,6 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: YoutubeBrowser.App.CONNECTION_STRING
-  commentId: F:YoutubeBrowser.App.CONNECTION_STRING
-  id: CONNECTION_STRING
-  parent: YoutubeBrowser.App
-  langs:
-  - csharp
-  - vb
-  name: CONNECTION_STRING
-  nameWithType: App.CONNECTION_STRING
-  fullName: YoutubeBrowser.App.CONNECTION_STRING
-  type: Field
-  source:
-    remote:
-      path: YouTubeBrowser/App.xaml.cs
-      branch: documentation
-      repo: https://github.com/Mindflayer77/YouTubeBrowser.git
-    id: CONNECTION_STRING
-    path: YouTubeBrowser/App.xaml.cs
-    startLine: 17
-  assemblies:
-  - YoutubeBrowser
-  namespace: YoutubeBrowser
-  summary: Connection string representing the path to the database.
-  example: []
-  syntax:
-    content: public const string CONNECTION_STRING = "Data Source=.\\YoutubeBrowser.db"
-    return:
-      type: System.String
-    content.vb: Public Const CONNECTION_STRING As String = "Data Source=.\YoutubeBrowser.db"
 - uid: YoutubeBrowser.App.#ctor
   commentId: M:YoutubeBrowser.App.#ctor
   id: '#ctor'
@@ -134,13 +104,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/App.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: .ctor
     path: YouTubeBrowser/App.xaml.cs
-    startLine: 22
+    startLine: 18
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Initializes a new instance of the App class
   example: []
@@ -165,13 +135,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/App.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: OnStartup
     path: YouTubeBrowser/App.xaml.cs
-    startLine: 28
+    startLine: 24
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Invoked when the application is starting up.
   example: []
@@ -1472,17 +1442,6 @@ references:
     name: Markup
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.windows.markup
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
 - uid: YoutubeBrowser.App.#ctor*
   commentId: Overload:YoutubeBrowser.App.#ctor
   href: YoutubeBrowser.App.html#YoutubeBrowser_App__ctor

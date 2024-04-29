@@ -42,13 +42,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: MainWindow
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 25
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: The main window of the application.
   example: []
@@ -765,13 +765,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: apiService
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 30
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: YouTube API service used for fetching videos
   example: []
@@ -794,13 +794,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: videos
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 34
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Currently listed videos
   example: []
@@ -823,13 +823,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: displayed_video
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 38
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Currently displayed video
   example: []
@@ -852,13 +852,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: factory
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 42
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Database context factory instance for easy access to the database
   example: []
@@ -881,13 +881,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: playlistsDisplayed
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 46
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Determines if the stored playlists are currently displayed
   example: []
@@ -910,13 +910,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: displayed_playlist
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 50
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Stores the information about currently displayed playlist
   example: []
@@ -939,13 +939,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: scrollViewer
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 54
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: ScrollViewer used for displaying playlists.
   example: []
@@ -968,13 +968,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: search_text
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 59
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Last searched query
   example: []
@@ -997,13 +997,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: .ctor
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 64
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Initializes a new instance of the MainWindow class
   example: []
@@ -1028,13 +1028,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Clear_Playlists_Click
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 77
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Utility function to remove all playlists from database.
   example: []
@@ -1066,13 +1066,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Click_Search
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 101
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: >-
     Search for videos based on the provided search query.
@@ -1107,13 +1107,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: GetEmbedAddress
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 138
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Retrieves the embed address for a YouTube video based on its ID.
   example: []
@@ -1145,13 +1145,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Add_Click
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 149
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: >-
     For adding the currently displayed video to a playlist. After clicking, the AddVideoWindow is opening.
@@ -1186,13 +1186,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Update_Playlist_Videos
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 170
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: >-
     Updates the list of videos in the displayed playlist.
@@ -1219,13 +1219,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: UpdatePlaylistView
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 193
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Updates the displayed playlists.
   example: []
@@ -1247,13 +1247,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Image_Click
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 205
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: >-
     A handler for an event which occurs when the user clicks on an image representing a video.
@@ -1288,13 +1288,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: DisplayImages
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 216
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: >-
     Displays images representing fetched videos.
@@ -1319,13 +1319,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: DestroyImages
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 240
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: >-
     Clears the panel displaying images.
@@ -1350,13 +1350,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Image_RightClick
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 250
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Event handler for right-clicking on an image representing a video. Remove video from playlist after right click.
   example: []
@@ -1388,13 +1388,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Remove_video_from_displayed_playlist
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 264
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Remove video from a displayed playlist.
   example: []
@@ -1423,13 +1423,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: YourPlaylists_Click
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 296
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: >-
     Event handler for clicking on the "Your Playlists" button.
@@ -1466,13 +1466,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Create_Playlist_ScrollViewer
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 310
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Creates a ScrollViewer for displaying playlists.
   example: []
@@ -1494,13 +1494,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: RemovePlaylistScrollViewer
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 351
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Remove  ScrollViewer for displayed playlists
   example: []
@@ -1522,13 +1522,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Create_Playlist_Button
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 364
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: >-
     Creates a button for a playlist.
@@ -1566,13 +1566,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Playlist_Button_Click
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 384
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: >-
     Event handler for clicking on a playlist button.
@@ -1607,13 +1607,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Playlist_Button_PreviewMouseRightButtonDown
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 410
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: >-
     Remove Playlist and PlaylistVideo object after right clicking on a button representing given playlist.
@@ -1650,13 +1650,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/MainWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: findVideo
     path: YouTubeBrowser/MainWindow.xaml.cs
     startLine: 461
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Finds a video by its ID.
   example: []

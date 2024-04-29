@@ -20,13 +20,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/Models/PlaylistVideo.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: PlaylistVideo
     path: YouTubeBrowser/Models/PlaylistVideo.cs
     startLine: 14
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.Models
   summary: Junction table between Videos and Playlists
   example: []
@@ -57,13 +57,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/Models/PlaylistVideo.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: ID
     path: YouTubeBrowser/Models/PlaylistVideo.cs
     startLine: 20
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.Models
   summary: >-
     PlaylistVideo ID |
@@ -110,13 +110,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/Models/PlaylistVideo.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: PlaylistId
     path: YouTubeBrowser/Models/PlaylistVideo.cs
     startLine: 23
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.Models
   syntax:
     content: public int PlaylistId { get; set; }
@@ -139,13 +139,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/Models/PlaylistVideo.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: VideoId
     path: YouTubeBrowser/Models/PlaylistVideo.cs
     startLine: 24
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.Models
   syntax:
     content: public int VideoId { get; set; }
@@ -168,13 +168,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/Models/PlaylistVideo.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Video
     path: YouTubeBrowser/Models/PlaylistVideo.cs
     startLine: 28
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.Models
   syntax:
     content: >-
@@ -209,13 +209,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/Models/PlaylistVideo.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Playlist
     path: YouTubeBrowser/Models/PlaylistVideo.cs
     startLine: 31
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.Models
   syntax:
     content: >-

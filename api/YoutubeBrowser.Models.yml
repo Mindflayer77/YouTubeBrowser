@@ -15,7 +15,7 @@ items:
   fullName: YoutubeBrowser.Models
   type: Namespace
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
 references:
 - uid: YoutubeBrowser.Models.Playlist
   commentId: T:YoutubeBrowser.Models.Playlist

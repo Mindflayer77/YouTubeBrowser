@@ -20,13 +20,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/Models/Video.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Video
     path: YouTubeBrowser/Models/Video.cs
     startLine: 17
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.Models
   summary: Database model representing a Video table
   example: []
@@ -57,13 +57,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/Models/Video.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Id
     path: YouTubeBrowser/Models/Video.cs
     startLine: 24
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.Models
   summary: >-
     Id of the Video | 
@@ -112,13 +112,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/Models/Video.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: YoutubeId
     path: YouTubeBrowser/Models/Video.cs
     startLine: 32
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.Models
   summary: >-
     YoutubeId identiying the video | 
@@ -156,13 +156,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/Models/Video.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Title
     path: YouTubeBrowser/Models/Video.cs
     startLine: 39
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.Models
   summary: >-
     Title of the video | 
@@ -200,13 +200,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/Models/Video.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Thumbnail_url
     path: YouTubeBrowser/Models/Video.cs
     startLine: 46
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.Models
   summary: >-
     Url of the video's thumbnail | 
@@ -244,13 +244,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/Models/Video.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Playlists
     path: YouTubeBrowser/Models/Video.cs
     startLine: 52
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.Models
   summary: Collection of playlists that the video belongs to
   example: []

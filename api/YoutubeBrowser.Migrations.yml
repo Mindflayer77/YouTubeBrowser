@@ -4,7 +4,7 @@ items:
   commentId: N:YoutubeBrowser.Migrations
   id: YoutubeBrowser.Migrations
   children:
-  - YoutubeBrowser.Migrations.initial
+  - YoutubeBrowser.Migrations.InitialCreate
   langs:
   - csharp
   - vb
@@ -13,11 +13,11 @@ items:
   fullName: YoutubeBrowser.Migrations
   type: Namespace
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
 references:
-- uid: YoutubeBrowser.Migrations.initial
-  commentId: T:YoutubeBrowser.Migrations.initial
-  href: YoutubeBrowser.Migrations.initial.html
-  name: initial
-  nameWithType: initial
-  fullName: YoutubeBrowser.Migrations.initial
+- uid: YoutubeBrowser.Migrations.InitialCreate
+  commentId: T:YoutubeBrowser.Migrations.InitialCreate
+  href: YoutubeBrowser.Migrations.InitialCreate.html
+  name: InitialCreate
+  nameWithType: InitialCreate
+  fullName: YoutubeBrowser.Migrations.InitialCreate

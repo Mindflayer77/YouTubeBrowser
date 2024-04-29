@@ -224,12 +224,6 @@ references:
   fullName.vb: YoutubeBrowser.App.New
   nameWithType: App.App
   nameWithType.vb: App.New
-- uid: YoutubeBrowser.App.CONNECTION_STRING
-  name: CONNECTION_STRING
-  href: api/YoutubeBrowser.App.html#YoutubeBrowser_App_CONNECTION_STRING
-  commentId: F:YoutubeBrowser.App.CONNECTION_STRING
-  fullName: YoutubeBrowser.App.CONNECTION_STRING
-  nameWithType: App.CONNECTION_STRING
 - uid: YoutubeBrowser.App.OnStartup(System.Windows.StartupEventArgs)
   name: OnStartup(StartupEventArgs)
   href: api/YoutubeBrowser.App.html#YoutubeBrowser_App_OnStartup_System_Windows_StartupEventArgs_
@@ -255,15 +249,15 @@ references:
   commentId: T:YoutubeBrowser.DbContexts.YoutubeBrowserContext
   fullName: YoutubeBrowser.DbContexts.YoutubeBrowserContext
   nameWithType: YoutubeBrowserContext
-- uid: YoutubeBrowser.DbContexts.YoutubeBrowserContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions)
-  name: YoutubeBrowserContext(DbContextOptions)
-  href: api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext__ctor_Microsoft_EntityFrameworkCore_DbContextOptions_
-  commentId: M:YoutubeBrowser.DbContexts.YoutubeBrowserContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions)
-  name.vb: New(DbContextOptions)
-  fullName: YoutubeBrowser.DbContexts.YoutubeBrowserContext.YoutubeBrowserContext(Microsoft.EntityFrameworkCore.DbContextOptions)
-  fullName.vb: YoutubeBrowser.DbContexts.YoutubeBrowserContext.New(Microsoft.EntityFrameworkCore.DbContextOptions)
-  nameWithType: YoutubeBrowserContext.YoutubeBrowserContext(DbContextOptions)
-  nameWithType.vb: YoutubeBrowserContext.New(DbContextOptions)
+- uid: YoutubeBrowser.DbContexts.YoutubeBrowserContext.#ctor
+  name: YoutubeBrowserContext()
+  href: api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext__ctor
+  commentId: M:YoutubeBrowser.DbContexts.YoutubeBrowserContext.#ctor
+  name.vb: New()
+  fullName: YoutubeBrowser.DbContexts.YoutubeBrowserContext.YoutubeBrowserContext()
+  fullName.vb: YoutubeBrowser.DbContexts.YoutubeBrowserContext.New()
+  nameWithType: YoutubeBrowserContext.YoutubeBrowserContext()
+  nameWithType.vb: YoutubeBrowserContext.New()
 - uid: YoutubeBrowser.DbContexts.YoutubeBrowserContext.#ctor*
   name: YoutubeBrowserContext
   href: api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext__ctor_
@@ -274,6 +268,32 @@ references:
   fullName.vb: YoutubeBrowser.DbContexts.YoutubeBrowserContext.New
   nameWithType: YoutubeBrowserContext.YoutubeBrowserContext
   nameWithType.vb: YoutubeBrowserContext.New
+- uid: YoutubeBrowser.DbContexts.YoutubeBrowserContext.ConnectionString
+  name: ConnectionString
+  href: api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_ConnectionString
+  commentId: P:YoutubeBrowser.DbContexts.YoutubeBrowserContext.ConnectionString
+  fullName: YoutubeBrowser.DbContexts.YoutubeBrowserContext.ConnectionString
+  nameWithType: YoutubeBrowserContext.ConnectionString
+- uid: YoutubeBrowser.DbContexts.YoutubeBrowserContext.ConnectionString*
+  name: ConnectionString
+  href: api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_ConnectionString_
+  commentId: Overload:YoutubeBrowser.DbContexts.YoutubeBrowserContext.ConnectionString
+  isSpec: "True"
+  fullName: YoutubeBrowser.DbContexts.YoutubeBrowserContext.ConnectionString
+  nameWithType: YoutubeBrowserContext.ConnectionString
+- uid: YoutubeBrowser.DbContexts.YoutubeBrowserContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)
+  name: OnConfiguring(DbContextOptionsBuilder)
+  href: api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_OnConfiguring_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_
+  commentId: M:YoutubeBrowser.DbContexts.YoutubeBrowserContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)
+  fullName: YoutubeBrowser.DbContexts.YoutubeBrowserContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)
+  nameWithType: YoutubeBrowserContext.OnConfiguring(DbContextOptionsBuilder)
+- uid: YoutubeBrowser.DbContexts.YoutubeBrowserContext.OnConfiguring*
+  name: OnConfiguring
+  href: api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_OnConfiguring_
+  commentId: Overload:YoutubeBrowser.DbContexts.YoutubeBrowserContext.OnConfiguring
+  isSpec: "True"
+  fullName: YoutubeBrowser.DbContexts.YoutubeBrowserContext.OnConfiguring
+  nameWithType: YoutubeBrowserContext.OnConfiguring
 - uid: YoutubeBrowser.DbContexts.YoutubeBrowserContext.Playlists
   name: Playlists
   href: api/YoutubeBrowser.DbContexts.YoutubeBrowserContext.html#YoutubeBrowser_DbContexts_YoutubeBrowserContext_Playlists
@@ -709,6 +729,51 @@ references:
   commentId: N:YoutubeBrowser.Migrations
   fullName: YoutubeBrowser.Migrations
   nameWithType: YoutubeBrowser.Migrations
+- uid: YoutubeBrowser.Migrations.InitialCreate
+  name: InitialCreate
+  href: api/YoutubeBrowser.Migrations.InitialCreate.html
+  commentId: T:YoutubeBrowser.Migrations.InitialCreate
+  fullName: YoutubeBrowser.Migrations.InitialCreate
+  nameWithType: InitialCreate
+- uid: YoutubeBrowser.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  name: BuildTargetModel(ModelBuilder)
+  href: api/YoutubeBrowser.Migrations.InitialCreate.html#YoutubeBrowser_Migrations_InitialCreate_BuildTargetModel_Microsoft_EntityFrameworkCore_ModelBuilder_
+  commentId: M:YoutubeBrowser.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  fullName: YoutubeBrowser.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  nameWithType: InitialCreate.BuildTargetModel(ModelBuilder)
+- uid: YoutubeBrowser.Migrations.InitialCreate.BuildTargetModel*
+  name: BuildTargetModel
+  href: api/YoutubeBrowser.Migrations.InitialCreate.html#YoutubeBrowser_Migrations_InitialCreate_BuildTargetModel_
+  commentId: Overload:YoutubeBrowser.Migrations.InitialCreate.BuildTargetModel
+  isSpec: "True"
+  fullName: YoutubeBrowser.Migrations.InitialCreate.BuildTargetModel
+  nameWithType: InitialCreate.BuildTargetModel
+- uid: YoutubeBrowser.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  name: Down(MigrationBuilder)
+  href: api/YoutubeBrowser.Migrations.InitialCreate.html#YoutubeBrowser_Migrations_InitialCreate_Down_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
+  commentId: M:YoutubeBrowser.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  fullName: YoutubeBrowser.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  nameWithType: InitialCreate.Down(MigrationBuilder)
+- uid: YoutubeBrowser.Migrations.InitialCreate.Down*
+  name: Down
+  href: api/YoutubeBrowser.Migrations.InitialCreate.html#YoutubeBrowser_Migrations_InitialCreate_Down_
+  commentId: Overload:YoutubeBrowser.Migrations.InitialCreate.Down
+  isSpec: "True"
+  fullName: YoutubeBrowser.Migrations.InitialCreate.Down
+  nameWithType: InitialCreate.Down
+- uid: YoutubeBrowser.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  name: Up(MigrationBuilder)
+  href: api/YoutubeBrowser.Migrations.InitialCreate.html#YoutubeBrowser_Migrations_InitialCreate_Up_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
+  commentId: M:YoutubeBrowser.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  fullName: YoutubeBrowser.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  nameWithType: InitialCreate.Up(MigrationBuilder)
+- uid: YoutubeBrowser.Migrations.InitialCreate.Up*
+  name: Up
+  href: api/YoutubeBrowser.Migrations.InitialCreate.html#YoutubeBrowser_Migrations_InitialCreate_Up_
+  commentId: Overload:YoutubeBrowser.Migrations.InitialCreate.Up
+  isSpec: "True"
+  fullName: YoutubeBrowser.Migrations.InitialCreate.Up
+  nameWithType: InitialCreate.Up
 - uid: YoutubeBrowser.Migrations.initial
   name: initial
   href: api/YoutubeBrowser.Migrations.initial.html

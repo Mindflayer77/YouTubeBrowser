@@ -14,7 +14,7 @@ items:
   fullName: YoutubeBrowser.DbContexts
   type: Namespace
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
 references:
 - uid: YoutubeBrowser.DbContexts.YoutubeBrowserContext
   commentId: T:YoutubeBrowser.DbContexts.YoutubeBrowserContext

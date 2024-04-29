@@ -14,7 +14,7 @@ items:
   fullName: YoutubeBrowser.ApiService
   type: Namespace
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
 references:
 - uid: YoutubeBrowser.ApiService.IYoutubeApi
   commentId: T:YoutubeBrowser.ApiService.IYoutubeApi

@@ -23,13 +23,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/AddVideoWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: AddVideoWindow
     path: YouTubeBrowser/AddVideoWindow.xaml.cs
     startLine: 23
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Class which handles the functionality connected to addition of new playlists and addition of videos to the playlists.
   example: []
@@ -746,13 +746,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/AddVideoWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: factory
     path: YouTubeBrowser/AddVideoWindow.xaml.cs
     startLine: 28
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Database context factory.
   example: []
@@ -775,13 +775,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/AddVideoWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: buttons
     path: YouTubeBrowser/AddVideoWindow.xaml.cs
     startLine: 32
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: List of dynamically created buttons. Each one of the button represents a different playlist.
   example: []
@@ -804,13 +804,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/AddVideoWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: video
     path: YouTubeBrowser/AddVideoWindow.xaml.cs
     startLine: 36
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Video which the user wants to add to a certain playlist.
   example: []
@@ -833,13 +833,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/AddVideoWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: .ctor
     path: YouTubeBrowser/AddVideoWindow.xaml.cs
     startLine: 43
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: >-
     Constructor which initializes the necessary elements of the window.
@@ -871,13 +871,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/AddVideoWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Button_Click
     path: YouTubeBrowser/AddVideoWindow.xaml.cs
     startLine: 57
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Adds the associated video to the selected playlist in the database.
   example: []
@@ -909,13 +909,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/AddVideoWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Create_Button
     path: YouTubeBrowser/AddVideoWindow.xaml.cs
     startLine: 90
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Dynamically creates a button for each existing playlist.
   example: []
@@ -944,13 +944,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/AddVideoWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Display_Playlists
     path: YouTubeBrowser/AddVideoWindow.xaml.cs
     startLine: 114
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Retrieves existing playlists from the database and creates buttons for each playlist.
   example: []
@@ -972,13 +972,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/AddVideoWindow.xaml.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Create_Playlist_Click
     path: YouTubeBrowser/AddVideoWindow.xaml.cs
     startLine: 133
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser
   summary: Creates a new playlist based on the name provided by the user and adds it to the database.
   example: []

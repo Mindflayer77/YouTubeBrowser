@@ -16,13 +16,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/Utility/Messages.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: Messages
     path: YouTubeBrowser/Utility/Messages.cs
     startLine: 12
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.Utility
   summary: Utility class for displaying messages to the user
   example: []
@@ -53,13 +53,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/Utility/Messages.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: showMessageBox
     path: YouTubeBrowser/Utility/Messages.cs
     startLine: 21
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.Utility
   summary: Static method for displaying MessageBox objects with information
   example: []

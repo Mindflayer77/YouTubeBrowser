@@ -52,7 +52,6 @@ namespace YoutubeBrowser.ApiService
             };
         }
 
-        //
         /// <summary>
         ///Downloads a list of YouTube videos based on specific search criteria. 
         /// </summary>

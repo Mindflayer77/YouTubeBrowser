@@ -16,13 +16,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/ApiService/IYoutubeApiService.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: IYoutubeApi
     path: YouTubeBrowser/ApiService/IYoutubeApiService.cs
     startLine: 19
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.ApiService
   summary: Interface for interacting with the YouTube API.
   example: []
@@ -43,13 +43,13 @@ items:
   source:
     remote:
       path: YouTubeBrowser/ApiService/IYoutubeApiService.cs
-      branch: documentation
+      branch: gh-pages
       repo: https://github.com/Mindflayer77/YouTubeBrowser.git
     id: GetVideos
     path: YouTubeBrowser/ApiService/IYoutubeApiService.cs
     startLine: 29
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
   namespace: YoutubeBrowser.ApiService
   summary: Fetches a list of videos from YouTube based on the specified search query and the number of videos to retrieve.
   example: []

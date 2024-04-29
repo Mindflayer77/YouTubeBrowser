@@ -13,7 +13,7 @@ items:
   fullName: YoutubeBrowser.Utility
   type: Namespace
   assemblies:
-  - YoutubeBrowser
+  - YouTubeBrowser
 references:
 - uid: YoutubeBrowser.Utility.Messages
   commentId: T:YoutubeBrowser.Utility.Messages
